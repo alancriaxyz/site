@@ -1,38 +1,43 @@
-# create-svelte
+## 🧭 Uses
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+- ⚡️ [SvelteKit](https://kit.svelte.dev/) for the framework and prerendering pages ahead of time making it blazingly fast 🔥
 
-## Creating a project
+- 🔲 [Shadcn](https://www.shadcn-svelte.com/docs/installation/sveltekit) for powerful and flexible UI components, enabling developers to build modern and responsive interfaces with ease.
 
-If you're seeing this, you've probably already done this step. Congrats!
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) for utility-first CSS, making it effortless to style your application with a consistent design system and responsive layout control.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- ⚡ Super fast site performance. Near Perfect [PageSpeed score](https://pagespeed.web.dev/analysis/https-alancria-xyz/aygruqcukd?form_factor=mobile).
 
-# create a new project in my-app
-npm create svelte@latest my-app
+- ✍🏼 Markdown support with a pre-configured blog
+
+- 📄 Auto-Generate [Table of Content](https://github.com/remarkjs/remark-toc) for posts.
+
+- 💬 Supports [Giscus](https://giscus.app) - a comments system powerd by Github Discussions.
+
+- 🤗 SEO ready with meta, [Open Graph](https://ogp.me), (JSON-LD)[https://json-ld.org]
+
+- 🛜 [RSS feed](https://en.wikipedia.org/wiki/RSS) set up and ready to go (though it could also likely benefit from some optimization); just update src/lib/config.js
+
+- 🌐 Automatic [sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview) generation to ensure all pages are indexed by search engines efficiently.
+
+- 🚀 Deploy the blog Free on [Cloudflare Pages](https://pages.cloudflare.com).
+
+## ⚙️ Setup
+
+### 🔄 Clone the project
+
+```sh
+git clone https://github.com/alancriaxyz/site.git
 ```
 
-## Developing
+### 📦️ Install the dependencies
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```sh
+npm install
+```
 
-```bash
+### 💿️ Run the development server
+
+```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
