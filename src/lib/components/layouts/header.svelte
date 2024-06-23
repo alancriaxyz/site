@@ -1,6 +1,6 @@
 <script lang="ts">
   import { config } from '$lib/config'
-  import { cn } from '$lib/utils'
+  import { cn } from '$lib/utils/theme'
   import { page } from '$app/stores'
   import { Button, buttonVariants } from '$lib/components/ui/button'
   import { Icon } from '$lib/components'

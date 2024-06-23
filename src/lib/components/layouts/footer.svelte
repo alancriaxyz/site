@@ -2,7 +2,7 @@
   const currentYear = new Date().getFullYear()
 
   import { config } from '$lib/config'
-  import { cn } from '$lib/utils'
+  import { cn } from '$lib/utils/theme'
   import { Button, buttonVariants } from '$lib/components/ui/button'
   import { Icon } from '$lib/components'
 </script>

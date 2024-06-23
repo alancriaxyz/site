@@ -1,5 +1,5 @@
 <script>
-  import { cn } from '$lib/utils'
+  import { cn } from '$lib/utils/theme'
   let className = undefined
   export { className as class }
 </script>

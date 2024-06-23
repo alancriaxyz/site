@@ -1,5 +1,5 @@
 <script>
-  import { cn } from '$lib/utils'
+  import { cn } from '$lib/utils/theme'
   let className = undefined
   export let tag = 'h3'
   export { className as class }
