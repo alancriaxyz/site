@@ -3,6 +3,7 @@
   import { Analytics } from '$lib/components/analytics'
 
   import { Header } from '$lib/components'
+  import LiteYouTubeEmbed from '$lib/components/embed/youtube.svelte'
 
   import '../styles/styles.scss'
 </script>
@@ -14,11 +15,11 @@
 <div class="relative flex min-h-screen flex-col">
   <Header />
 
-  <!-- <LiteYouTubeEmbed />
+  <LiteYouTubeEmbed />
 
-	<main class="container flex max-w-screen-lg flex-col py-5">
+  <!-- <main class="container flex max-w-screen-lg flex-col py-5">
 		<slot />
-	</main>
+	</main> -->
 
-	<SiteFooter /> -->
+  <!-- <SiteFooter /> -->
 </div>
