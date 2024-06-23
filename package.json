@@ -23,6 +23,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.40.0",
 		"globals": "^15.6.0",
+		"gray-matter": "^4.0.3",
 		"lite-youtube-embed": "^0.3.2",
 		"lucide-svelte": "^0.396.0",
 		"mode-watcher": "^0.3.1",
