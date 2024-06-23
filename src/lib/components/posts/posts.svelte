@@ -9,7 +9,7 @@
   <article class="my-3">
     <a href="/blog/{post.slug}" data-sveltekit-preload-data="off">
       <Card.Root
-        class="hover:shadow-[0px_1px_1px_rgba(221,_221,_221,_1),_0_1px_10px_rgba(204,_204,_204,_1)]">
+        class="overflow-hidden rounded-lg transition-all duration-500 hover:shadow-[0_0_5px_rgba(221,221,221,0.5),0_0_15px_rgba(204,204,204,0.5)]">
         <Card.Header>
           <Card.Title title={post.title}>{post.title}</Card.Title>
           <Card.Description>{post.description}</Card.Description>
