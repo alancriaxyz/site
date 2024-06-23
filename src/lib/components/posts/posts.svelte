@@ -7,7 +7,7 @@
 
 {#each posts as post}
   <article class="my-3">
-    <a href="/blog/{post.slug}" data-sveltekit-preload-data="off">
+    <a href="/post/{post.slug}" data-sveltekit-preload-data="off">
       <Card.Root
         class="overflow-hidden rounded-lg transition-all duration-500 hover:shadow-[0_0_5px_rgba(221,221,221,0.5),0_0_15px_rgba(204,204,204,0.5)]">
         <Card.Header>
