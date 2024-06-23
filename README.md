@@ -14,7 +14,7 @@
 
 - 💬 Supports [Giscus](https://giscus.app) - a comments system powerd by Github Discussions.
 
-- 🤗 SEO ready with meta, [Open Graph](https://ogp.me), (JSON-LD)[https://json-ld.org]
+- 🤗 SEO ready with meta, [Open Graph](https://ogp.me), [JSON-LD](https://json-ld.org)
 
 - 🛜 [RSS feed](https://en.wikipedia.org/wiki/RSS) set up and ready to go (though it could also likely benefit from some optimization); just update src/lib/config.js
 
