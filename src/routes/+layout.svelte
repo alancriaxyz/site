@@ -2,7 +2,7 @@
   import { ModeWatcher } from 'mode-watcher'
   import { Analytics } from '$lib/components/analytics'
 
-  import { Header } from '$lib/components'
+  import { Header, Footer } from '$lib/components'
   import LiteYouTubeEmbed from '$lib/components/embed/youtube.svelte'
 
   import '../styles/styles.scss'
@@ -17,9 +17,9 @@
 
   <LiteYouTubeEmbed />
 
-  <!-- <main class="container flex max-w-screen-lg flex-col py-5">
-		<slot />
-	</main> -->
+  <main class="container flex max-w-screen-lg flex-col py-5">
+    <slot />
+  </main>
 
-  <!-- <SiteFooter /> -->
+  <Footer />
 </div>
