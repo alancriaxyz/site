@@ -12,6 +12,10 @@
 		{
 			"files": "*.svelte",
 			"options": { "parser": "svelte" }
+		},
+		{
+		  "files": "*.html",
+		  "options": { "parser": "html" }
 		}
 	]
 }
