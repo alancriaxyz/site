@@ -9,7 +9,7 @@
 
 <Analytics />
 
-<ModeWatcher />
+<ModeWatcher defaultMode={'dark'} />
 
 <div class="relative flex min-h-screen flex-col">
   <Header />
