@@ -1,0 +1,101 @@
+.prose header {
+    @apply text-center mb-4;
+}
+
+.prose .title {
+    @apply text-balance;
+}
+
+.prose lite-youtube {
+    @apply rounded-lg shadow-lg shadow-black bg-black mx-auto mb-7 dark:shadow-sm dark:shadow-current dark:bg-white;
+}
+
+.prose #table-of-contents + ul a {
+    @apply no-underline font-normal;
+}
+
+.prose p > a,
+.prose li > a {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.prose p,
+.prose li {
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.prose img {
+	justify-self: center;
+}
+
+.prose img,
+.prose iframe,
+.prose video,
+.prose p,
+.prose ul,
+.prose ol,
+.prose pre,
+.prose blockquote,
+.prose details {
+	margin-bottom: 3.2rem;;
+}
+
+.prose li > ul {
+	margin-bottom: 0;
+}
+
+.prose ul,
+.prose ol {
+	display: grid;
+	row-gap: 1.6rem;
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+.prose ul li::before {
+    content: '🔥';
+    padding-right: 0.875rem;
+}
+
+.prose li > ul {
+	margin-top: 0.8rem;;
+	padding-left: 1.6rem;
+}
+
+.prose li > ul > li {
+	list-style-type: circle;
+}
+
+.prose li > ul > li::before {
+	content: none;
+}
+
+.prose ol {
+	list-style-type: decimal;
+}
+
+.prose li > ol {
+	margin-top: 0.8rem;
+	padding-left: 1.6rem;
+}
+
+.prose blockquote {
+	padding: 3.2rem;
+	color: hsl(210 47% 80%);
+	background-color: hsl(210 47% 14%);
+	border: 1px solid hsl(210 40% 20%);
+	border-top: 4px solid linear-gradient(hsl(210 47% 14%), hsl(210 47% 18%));
+	border-radius: 20px;
+	box-shadow: 0px 0px 4px 4px hsl(0 0% 0% / 4%);
+}
+
+.prose blockquote p {
+	margin-bottom: 0;
+}
+
+.prose details summary {
+	margin-bottom: 0.8rem;
+	font-weight: 700;
+}

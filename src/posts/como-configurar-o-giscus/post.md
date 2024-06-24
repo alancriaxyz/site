@@ -126,5 +126,3 @@ No código do meu site ficou assim:
   </div>
 </div>
 ```
-
-{% include post_feedback_footer.md %}

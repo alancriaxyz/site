@@ -34,11 +34,7 @@
     </div>
 
     <nav class="flex items-center">
-      <a
-        href={config.social.youtube}
-        target="_blank"
-        rel="noreferrer"
-        class="hidden md:flex">
+      <a href={config.social.youtube} target="_blank" rel="noreferrer">
         <div
           class={cn(
             buttonVariants({
@@ -48,22 +44,6 @@
             'w-9 px-0'
           )}>
           <Icon.youtube class="h-4 w-4" />
-        </div>
-      </a>
-      <a
-        href={config.social.twitter}
-        target="_blank"
-        rel="noreferrer"
-        class="hidden md:flex">
-        <div
-          class={cn(
-            buttonVariants({
-              size: 'sm',
-              variant: 'ghost',
-            }),
-            'w-9 px-0'
-          )}>
-          <Icon.twitter class="h-3 w-3 fill-current" />
         </div>
       </a>
       <Button on:click={toggleMode} variant="ghost" class="w-9 px-0" size="sm">

@@ -1,0 +1,70 @@
+.prose code[class*='shiki'],
+.prose pre[class*='shiki'] {
+	font-size:  18px;
+	tab-size: 2;
+}
+
+.prose pre {
+	padding-block: 1.6rem;
+	line-height: 34px;
+	background-image: linear-gradient(hsl(226, 19%, 13%), hsl(226, 19%, 16%));
+	border-left: 1px solid hsl(226, 19%, 16%);
+	border-top: none;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	overflow-x: auto;
+}
+
+.prose code:not(pre > code) {
+	padding: 0.4rem 0.8rem;
+	color: hsl(173 100% 94%);
+	background-color: hsl(173 60% 4%);
+	border-radius: 4px;
+}
+
+// .prose kbd,
+// .prose code {
+// 	font-family: var(--font-mono);
+// }
+
+// html[data-font='dyslexic'] .prose kbd,
+// html[data-font='dyslexic'] .prose code {
+// 	font-family: var(--font-dyslexic-mono);
+// }
+
+.prose kbd {
+	padding: 0.4rem;
+	color: hsl(173 100% 94%);
+	background-color: hsl(173 60% 4%);
+	border: 1px solid hsl(173 100% 66%);
+	border-width: 1px 1px 3px;
+	border-radius: 4px;
+}
+
+.prose .rehype-code-title {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.6rem 2.4rem;
+	font-size: 18px;
+	color: hsl(226, 19%, 80%);
+	background-color: hsl(226, 19%, 13%);
+	border-top: 1px solid hsl(226, 19%, 16%);
+	border-left: 1px solid hsl(226, 19%, 16%);
+	border-bottom: none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.prose code .line:not(:last-of-type) {
+	display: inline-block;
+	padding-inline: 2.4rem;
+}
+
+.prose code .highlighted {
+	width: 100%;
+	background-color: hsl(226, 19%, 18%);
+}
+
+.prose code span {
+	font-style: normal !important;
+}

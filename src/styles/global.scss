@@ -57,4 +57,12 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  h1 {
+    @apply mb-4 text-4xl font-black leading-none tracking-tight md:text-5xl
+  }  
+
+  h2 {
+    @apply mb-4 text-3xl font-black leading-none tracking-tight md:text-4xl
+  }    
 }
