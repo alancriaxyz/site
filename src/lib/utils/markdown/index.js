@@ -9,6 +9,7 @@ import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeCodeTitles from 'rehype-code-titles'
 import rehypePrettyCode from 'rehype-pretty-code';
+import rehypeRaw from 'rehype-raw';
 import { transformerNotationHighlight } from '@shikijs/transformers'
 import { rehypeCopyCode, rehypeUnwrapImages } from './plugins.js'
 import toHtmlString from 'rehype-stringify'
@@ -99,6 +100,7 @@ const markdownProcessor = unified()
     .use(toMarkdownAST) 
     .use([remarkGfm, remarkSmartypants, [remarkTableofContents, { tight: true }]])
     .use(toHtmlAST, { allowDangerousHtml: true })
+	.use(rehypeRaw)
     .use([rehypeSlug, rehypeAutolinkHeadings])
     .use(rehypeCodeTitles)
     .use(rehypePrettyCode, {
