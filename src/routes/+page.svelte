@@ -2,10 +2,6 @@
   import { config } from '$lib/config'
   import { Posts } from '$lib/components'
 
-  let sameAsUrls = Object.values(config.social).filter(
-    (url) => typeof url === 'string' && url.startsWith('https')
-  )
-
   export let data
 </script>
 
@@ -51,7 +47,9 @@
     },
     mainEntityOfPage: config.url,
     description: config.seo.description,
-    sameAs: sameAsUrls,
+    sameAs: Object.values(config.social).filter(
+      (url) => typeof url === 'string' && url.startsWith('https')
+    ),
   })}</script>`}
 </svelte:head>
 

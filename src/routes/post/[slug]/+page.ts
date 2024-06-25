@@ -5,7 +5,10 @@ export async function load({ params: { slug } }) {
 	try {
 		const post = await import(`../../../posts/${slug}/post.md`)
 		
-		return { component: post.default, frontmatter: post.metadata }
+		return {
+			meta: post.metadata,
+			content: post.default
+		}
 	} catch (e) {
 		error(404, `Post does not exist`)
 	}

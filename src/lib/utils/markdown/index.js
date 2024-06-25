@@ -1,17 +1,17 @@
 import matter from 'gray-matter'
 import { unified } from 'unified'
 import toMarkdownAST from 'remark-parse'
-import toHtmlAST from 'remark-rehype'
-import toHtmlString from 'rehype-stringify'
 import remarkGfm from 'remark-gfm'
 import remarkSmartypants from 'remark-smartypants'
 import remarkTableofContents from 'remark-toc'
+import toHtmlAST from 'remark-rehype'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeCodeTitles from 'rehype-code-titles'
-import rehypeShiki from '@shikijs/rehype'
-import { transformerMetaHighlight } from '@shikijs/transformers'
+import rehypePrettyCode from 'rehype-pretty-code';
+import { transformerNotationHighlight } from '@shikijs/transformers'
 import { rehypeCopyCode, rehypeUnwrapImages } from './plugins.js'
+import toHtmlString from 'rehype-stringify'
 
 const images = `https://raw.githubusercontent.com/mattcroat/joy-of-code/main/posts`
 
@@ -34,7 +34,7 @@ function frontmatter(content) {
 			export const metadata = ${JSON.stringify(data)}
 		</script>
 	`
-	return { markdown, meta }
+	return { meta, markdown }
 }
 
 /**
@@ -47,20 +47,6 @@ async function parseMarkdown(content, slug) {
 	const parsedMarkdown = await markdownProcessor.process(replacedContent)
 	return parsedMarkdown.toString()
 }
-
-const markdownProcessor = unified()
-	.use(toMarkdownAST)
-	.use([remarkGfm, remarkSmartypants, [remarkTableofContents, { tight: true }]])
-	.use(toHtmlAST, { allowDangerousHtml: true })
-	.use([rehypeSlug, rehypeAutolinkHeadings])
-	.use(rehypeCodeTitles)
-	.use(rehypeShiki, {
-		theme: 'poimandres',
-		transformers: [transformerMetaHighlight()],
-	})
-	.use(rehypeUnwrapImages)
-	.use(rehypeCopyCode)
-	.use(toHtmlString, { allowDangerousHtml: true })
 
 /**
  * Search and replace Markdown.
@@ -109,6 +95,20 @@ function searchAndReplace(content, slug) {
 		})
 }
 
+const markdownProcessor = unified()
+    .use(toMarkdownAST) 
+    .use([remarkGfm, remarkSmartypants, [remarkTableofContents, { tight: true }]])
+    .use(toHtmlAST, { allowDangerousHtml: true })
+    .use([rehypeSlug, rehypeAutolinkHeadings])
+    .use(rehypeCodeTitles)
+    .use(rehypePrettyCode, {
+      theme: 'aurora-x',
+      transformers: [transformerNotationHighlight()],
+    })
+    .use(rehypeCopyCode)
+    .use(rehypeUnwrapImages)
+    .use(toHtmlString, { allowDangerousHtml: true })    
+
 /**
  * Replace special Svelte characters.
  * @param {string} content
@@ -122,6 +122,8 @@ function escapeHtml(content) {
 		const replaced = component.replace('&#123;', '{').replace('&#125;', '}')
 		content = content.replace(component, replaced)
 	})
+
+  content = content.replace(/tabindex="0"/g, '')
 
 	return content
 }
@@ -143,7 +145,7 @@ function markdown() {
 		async markup({ content, filename }) {
 			if (filename.endsWith('.md')) {
 				const slug = getSlug(filename)
-				const { markdown, meta } = frontmatter(content)
+				const { meta, markdown } = frontmatter(content)
 				const html = await parseMarkdown(markdown, slug)
 				const code = escapeHtml(html)
 				return { code: meta + code }

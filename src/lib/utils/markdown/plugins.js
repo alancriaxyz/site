@@ -2,28 +2,6 @@
 
 import { visit, SKIP } from 'unist-util-visit'
 
-export function rehypeUnwrapImages() {
-	function containsImage(node) {
-		return (
-			node.tagName === 'p' &&
-			node.children.some((child) => {
-				if (child.type === 'element') {
-					return child.tagName === 'img'
-				}
-			})
-		)
-	}
-
-	return (tree) => {
-		visit(tree, containsImage, (node, index, parent) => {
-			if (node.type === 'element') {
-				parent.children.splice(index, 1, ...node.children)
-				return [SKIP, index]
-			}
-		})
-	}
-}
-
 export function rehypeCopyCode() {
 	function codeTitle(node) {
 		if (node.tagName === 'div') {
@@ -51,6 +29,28 @@ export function rehypeCopyCode() {
 					children: [{ type: 'text', value: `Copy` }],
 				},
 			]
+		})
+	}
+}
+
+export function rehypeUnwrapImages() {
+	function containsImage(node) {
+		return (
+			node.tagName === 'p' &&
+			node.children.some((child) => {
+				if (child.type === 'element') {
+					return child.tagName === 'img'
+				}
+			})
+		)
+	}
+
+	return (tree) => {
+		visit(tree, containsImage, (node, index, parent) => {
+			if (node.type === 'element') {
+				parent.children.splice(index, 1, ...node.children)
+				return [SKIP, index]
+			}
 		})
 	}
 }
