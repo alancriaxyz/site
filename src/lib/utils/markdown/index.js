@@ -5,11 +5,11 @@ import remarkGfm from 'remark-gfm'
 import remarkSmartypants from 'remark-smartypants'
 import remarkTableofContents from 'remark-toc'
 import toHtmlAST from 'remark-rehype'
+import rehypeRaw from 'rehype-raw';
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeCodeTitles from 'rehype-code-titles'
 import rehypePrettyCode from 'rehype-pretty-code';
-import rehypeRaw from 'rehype-raw';
 import { transformerNotationHighlight } from '@shikijs/transformers'
 import { rehypeCopyCode, rehypeUnwrapImages } from './plugins.js'
 import toHtmlString from 'rehype-stringify'

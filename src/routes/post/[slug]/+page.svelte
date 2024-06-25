@@ -1,7 +1,6 @@
 <script lang="ts">
   import { config } from '$lib/config'
   import dateformat from 'dateformat'
-
   import Clipboard from './clipboard.svelte'
 
   export let data
