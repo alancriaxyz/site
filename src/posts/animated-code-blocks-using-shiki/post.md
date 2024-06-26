@@ -7,11 +7,9 @@ dateModified: '2024-05-13'
 
 {% youtube id="RbfIcFZsISg" title="Animated Code Blocks Using Shiki Magic Move" %}
 
-## Table of Contents
+## Conteúdo
 
 ## What Is Shiki Magic Move?
-
-{% embed src="https://stackblitz.com/github/joysofcode/shiki-magic-move?ctl=1&embed=1&file=src%2Froutes%2F%2Bpage.svelte&view=preview&title=Shiki Magic Move" title="Shiki Magic Move" %}
 
 You can click on the example on the page to activate the code block animation. You can find the [source code](https://github.com/joysofcode/shiki-magic-move) on GitHub.
 

@@ -5,17 +5,18 @@ datePublished: '2024-05-13'
 dateModified: '2024-05-13'
 ---
 
-## Fala, Cria! 👊🏽
+{% youtube id="tih3VnaTaPk" title="OpenAI GPT-4o | Primeiras Impressões e Alguns Teste com API" %}
 
-{% include embeds/youtube.html id="tih3VnaTaPk" %}
+## Conteúdo
 
-Hoje quem lançou a braba foi a galera da OpenAI. Os malucos são brabos demais, mano! A jogada da vez foi o seu novo modelo [GPT-4o](https://openai.com/index/hello-gpt-4o/), projetado para revolucionar a geração de texto, imagem, áudio e vídeo.
+## Lançamento
 
-Esse "o" aí vem de "onisciente", ou seja, os caras vão está em tudo agora. Eles querem que o GPT-4o consiga criar qualquer tipo de conteúdo, em qualquer formato, em qualquer idioma.
+Hoje quem lançou a braba foi a galera da OpenAI. A jogada da vez foi o seu novo modelo [GPT-4o](https://openai.com/index/hello-gpt-4o/), projetado para revolucionar a geração de texto, imagem, áudio e vídeo.
 
-AGI se aproximando? 🤔
+Esse **"o"** aí vem de **"onipresente"**, ou seja, os caras vão estar em todos os lugares.
+Eles querem que o GPT-4 consiga criar qualquer tipo de conteúdo, em qualquer formato e em qualquer idioma.
 
-# Mudança
+## Mudança
 
 Atualmente muitos devs utilizam os seguintes modelos para atingir os seus objetivos:
 
@@ -25,15 +26,7 @@ Atualmente muitos devs utilizam os seguintes modelos para atingir os seus objeti
 | gpt-4-turbo   | Texto   | Texto | 128k   |
 | gpt-4-turbo   | Imagem  | Texto | 16k    |
 
-Até a data de hoje, temos a seguinte possibilidade com o GPT-4o:
-
-| Modelo | Entrada | Saída | Tokens |
-| ------ | ------- | ----- | ------ |
-| gpt-4o | Texto   | Texto | 128k   |
-| gpt-4o | Imagem  | Texto | 128k   |
-| gpt-4o | Vídeo   | Texto | 128k   |
-
-Ele apenas está gerando a saída de texto, mas a OpenAI promete que em breve teremos a saída de imagem, áudio e vídeo, então o que veremos em um futuro próximo é:
+A nova proposta da OpenAI promete entradas/saídas de imagens, áudios e vídeos, então o que veremos em um futuro próximo é:
 
 | Modelo | Entrada | Saída  | Tokens |
 | ------ | ------- | ------ | ------ |
@@ -56,9 +49,9 @@ E o melhor de tudo, uma janela de contexto de 128k tokens, ou seja, o modelo con
 
 A CTO [Mira Murati](https://twitter.com/miramurati) apontou que a utilização de três modelos diferentes pode causar latência no GPT. A solução é ter um único modelo capaz de processar áudio, texto e visão, eliminando esse problema e proporcionando uma interação mais fluída e imediata, semelhante à comunicação humana.
 
-Novamente, AGI se aproximando? 🤔
+AGI se aproximando? 🤔
 
-# Exemplos de uso
+## Exemplos de uso
 
 Os gringos lançaram uma pancada de exemplos de aplicações usando esse novo modelo:
 
@@ -75,16 +68,11 @@ Os gringos lançaram uma pancada de exemplos de aplicações usando esse novo mo
 
 > E você, já pensou no que vai criar com esse novo modelo? Conta aí nos comentários.
 
-# API
+## Acessando a API
 
 Vamos brincar um pouco com a API que já está disponível para todos os desenvolvedores.
 
-## Texto para Texto
-
-{% highlight python %}
-
-# main.py
-
+```py:main.py
 from openai import OpenAI
 import os
 
@@ -92,11 +80,11 @@ SECRET_KEY = "SUA_CHAVE"
 client = OpenAI(api_key=SECRET_KEY)
 
 completion = client.chat.completions.create(
-model="gpt-4o",
-messages=[
-{"role": "system", "content": "Você é um assistente prestativo. Me ajude com a minha lição de matemática!"},
-{"role": "user", "content": "Olá! Você poderia resolver 2+2?"}
-]
+  model="gpt-4o",
+  messages=[
+    {"role": "system", "content": "Você é um assistente prestativo. Me ajude com a minha lição de matemática!"},
+    {"role": "user", "content": "Olá! Você poderia resolver 2+2?"}
+  ]
 )
 
 print("Assistente: " + completion.choices[0].message.content)
@@ -105,20 +93,19 @@ print("Assistente: " + completion.choices[0].message.content)
 Saida:
 ( 2 + 2 = 4 ). Se precisar de mais ajuda com sua lição de matemática, estou à disposição!
 """
-{% endhighlight %}
+```
 
 Exemplo bem simples, certo?
 
-Mas veja que não precisamos mais usar o _gpt-4-turbo_ para resolver problemas matemáticos, o _gpt-4_ já resolve isso para nós. Eu ainda vou continuar usando o _gpt-3.5-turbo_ para algumas situações, pois ele ainda é mais rápido e mais barato para textos menores.
+Mas veja que não precisamos mais usar o _gpt-4-turbo_ para resolver problemas matemáticos, o _gpt-4_ já resolve isso para nós.
 
-## Processamento de Imagem
+Eu ainda pretendo continuar usando o _gpt-3.5-turbo_ para algumas situações, pois ele ainda é mais rápido e mais barato para textos menores.
+
+### Processamento de Imagem
 
 Para esse teste peguei um screenshot do [meu linkedin](https://www.linkedin.com/in/alancriaxyz/) e vou pedir para o modelo descrever o que posso melhorar no meu perfil.
 
-{% highlight python %}
-
-# main.py
-
+```py:main.py
 from openai import OpenAI
 import base64
 
@@ -126,36 +113,33 @@ SECRET_KEY = "SUA_CHAVE"
 client = OpenAI(api_key=SECRET_KEY)
 
 def encode_image(image_path):
-with open(image_path, "rb") as image_file:
-return base64.b64encode(image_file.read()).decode("utf-8")
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
 
 base64_image = encode_image("linkedin.png")
 
 response = client.chat.completions.create(
-model="gpt-4o",
-messages=[
-{"role": "system", "content": "Você é um assistente que analisa imagens."},
-{"role": "user", "content": [
-{"type": "text", "text": "O que eu poderia melhorar no meu perfil do LinkedIn?"},
-{"type": "image_url", "image_url": {
-"url": f"data:image/png;base64,{base64_image}"}
-}
-]}
-],
-temperature=0.0,
+    model="gpt-4o",
+    messages=[
+        {"role": "system", "content": "Você é um assistente que analisa imagens."},
+        {"role": "user", "content": [
+            {"type": "text", "text": "O que eu poderia melhorar no meu perfil do LinkedIn?"},
+            {"type": "image_url", "image_url": {
+                "url": f"data:image/png;base64,{base64_image}"}
+            }
+        ]}
+    ],
+    temperature=0.0,
 )
 
 print(response.choices[0].message.content)
 
 """
 Saida:
-
 1. **Foto de Perfil e Capa**:
-
    - A foto de perfil é profissional e amigável, o que é ótimo. Certifique-se de que a foto de capa também seja relevante para sua área de atuação ou que reflita sua personalidade profissional.
 
 2. **Título Profissional**:
-
    - Seu título atual é "CTO na VIK". Considere adicionar palavras-chave que descrevam suas habilidades e especializações, como "CTO | Engenheiro de Software | Especialista em Ruby on Rails".
 
 3. **Resumo (Sobre)**:
@@ -163,15 +147,16 @@ Saida:
 
 ...
 """
+```
 
-{% endhighlight %}
+Bem mais interessante, certo?
 
-Bem mais interessante, certo? O modelo conseguiu analisar a minha foto e sugerir melhorias no meu perfil.
+O modelo conseguiu analisar a minha foto e sugerir melhorias no meu perfil.
 
-# Conclusão
+## Conclusão
 
-Esses são os exemplos mais próximos, em breve a OpenAI disponibiliza as entradas/saídas de áudio e vídeo _(Sora, será?)_. Eles não lançaram ainda, com a seguinte ressalva abaixo.
+Em breve a OpenAI disponibiliza as entradas/saídas de áudio e vídeo _(Sora?)_.
+
+Eles não lançaram ainda, com a seguinte ressalva abaixo.
 
 "Reconhecemos que as modalidades de áudio do GPT-4 apresentam uma variedade de riscos novos. Hoje estamos lançando publicamente entradas de texto e imagem e saídas de texto. Nas próximas semanas e meses, trabalharemos na infraestrutura técnica, usabilidade pós-treinamento e segurança necessária para liberar as outras modalidades. Por exemplo, no lançamento, as saídas de áudio serão limitadas a uma seleção de vozes pré-definidas e seguirão nossas políticas de segurança existentes."
-
-{% include post_feedback_footer.md %}

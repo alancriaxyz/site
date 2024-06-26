@@ -69,7 +69,7 @@
 <article class="prose">
   <header>
     <h1 class="title">{data.meta.title}</h1>
-    <p>{dateformat(data.meta.datePublished, 'mediumDate')}</p>
+    <p class="published">{dateformat(data.meta.datePublished, 'mediumDate')}</p>
   </header>
 
   <svelte:component this={data.content} />

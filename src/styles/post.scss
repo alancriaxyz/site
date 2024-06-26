@@ -6,12 +6,17 @@
     @apply text-balance;
 }
 
-.prose lite-youtube {
-    @apply rounded-lg shadow-lg shadow-black bg-black mx-auto mb-7 dark:shadow-sm dark:shadow-current dark:bg-white;
+.prose .published {
+	@apply mb-4 text-xs;
 }
 
-.prose #table-of-contents + ul a {
-    @apply no-underline font-normal;
+.prose lite-youtube {
+    @apply rounded-lg shadow-lg shadow-black bg-black mx-auto my-auto dark:shadow-sm dark:shadow-current dark:bg-white;
+}
+
+.prose ul > li > a {
+	text-decoration: none;
+	font-weight: inherit;
 }
 
 .prose p > a,
@@ -20,82 +25,48 @@
 	text-underline-offset: 4px;
 }
 
-.prose p,
 .prose li {
-	font-size: 18px;
-	line-height: 40px;
+	@apply my-2 leading-8;
 }
 
-.prose img {
-	justify-self: center;
+.prose ul li::before {
+    content: '🔥';
+    padding-right: 5px;
 }
+
+.prose table {
+	@apply table-auto text-left text-sm min-w-full border-collapse ;
+}
+
+.prose thead {
+	@apply bg-black dark:bg-white;
+}
+
+.prose th {
+	@apply text-white dark:text-black px-2 py-2 uppercase;
+}
+
+.prose td {
+	@apply px-2 py-2 border-b-2;
+}
+
 
 .prose img,
 .prose iframe,
 .prose video,
 .prose p,
-.prose ul,
 .prose ol,
 .prose pre,
 .prose blockquote,
-.prose details {
-	margin-bottom: 3.2rem;;
-}
-
-.prose li > ul {
-	margin-bottom: 0;
-}
-
-.prose ul,
-.prose ol {
-	display: grid;
-	row-gap: 1.6rem;
-	list-style-type: none;
-	list-style-position: inside;
-}
-
-.prose ul li::before {
-    content: '🔥';
-    padding-right: 0.875rem;
-}
-
-.prose li > ul {
-	margin-top: 0.8rem;;
-	padding-left: 1.6rem;
-}
-
-.prose li > ul > li {
-	list-style-type: circle;
-}
-
-.prose li > ul > li::before {
-	content: none;
-}
-
-.prose ol {
-	list-style-type: decimal;
-}
-
-.prose li > ol {
-	margin-top: 0.8rem;
-	padding-left: 1.6rem;
+.prose details,
+.prose table  {
+	@apply mb-6;
 }
 
 .prose blockquote {
-	padding: 3.2rem;
-	color: hsl(210 47% 80%);
-	background-color: hsl(210 47% 14%);
-	border: 1px solid hsl(210 40% 20%);
-	border-top: 4px solid linear-gradient(hsl(210 47% 14%), hsl(210 47% 18%));
-	border-radius: 20px;
-	box-shadow: 0px 0px 4px 4px hsl(0 0% 0% / 4%);
+	@apply text-2xl italic font-semibold text-gray-900 border-double border-y-4 my-6 py-6 border-current dark:text-white
 }
 
-.prose blockquote p {
-	margin-bottom: 0;
-}
-
-.prose details summary {
-	margin-bottom: 0.8rem;
-	font-weight: 700;
+.prose blockquote > p {
+	@apply mb-0;
 }

@@ -6,6 +6,7 @@ import remarkSmartypants from 'remark-smartypants'
 import remarkTableofContents from 'remark-toc'
 import toHtmlAST from 'remark-rehype'
 import rehypeRaw from 'rehype-raw';
+import rehypeExternalLinks from 'rehype-external-links'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeCodeTitles from 'rehype-code-titles'
@@ -55,52 +56,39 @@ async function parseMarkdown(content, slug) {
  * @param {string} slug
  */
 function searchAndReplace(content, slug) {
-	const embed = /{% embed src="(.*?)" title="(.*?)" %}/g
 	const video = /{% video src="(.*?)" %}/g
 	const image = /{% img src="(.*?)" alt="(.*?)" %}/g
 	const youtube = /{% youtube id="(.*?)" title="(.*?)" %}/g
 
 	return content
-		.replace(embed, (_, src, title) => {
-			return `
-        <iframe
-          title="${title}"
-          src="${src}"
-          loading="lazy"
-        ></iframe>
-      `.trim()
-		})
 		.replace(video, (_, src) => {
 			return `
-        <video controls>
-          <source
-            src="${images}/${slug}/images/${src}"
-            type="video/mp4"
-          />
-        </video>
-      `.trim()
+				<video controls>
+				<source
+					src="${images}/${slug}/images/${src}"
+					type="video/mp4"
+				/>
+				</video>`.trim()
 		})
 		.replace(image, (_, src, alt) => {
 			return `
-      <img
-        src="${images}/${slug}/images/${src}"
-        alt="${alt}"
-        loading="lazy"
-      />
-  `.trim()
+				<img
+					src="${images}/${slug}/images/${src}"
+					alt="${alt}"
+					loading="lazy"
+				/>`.trim()
 		})
 		.replace(youtube, (_, id, title) => {
-			return `
-				<lite-youtube videoid="${id}" playlabel="${title}"></lite-youtube>
-			`.trim()
+			return `<lite-youtube videoid="${id}" playlabel="${title}"></lite-youtube>`.trim()
 		})
 }
 
 const markdownProcessor = unified()
     .use(toMarkdownAST) 
-    .use([remarkGfm, remarkSmartypants, [remarkTableofContents, { tight: true }]])
+    .use([remarkGfm, remarkSmartypants, [remarkTableofContents, { heading: "Conteúdo", maxDepth: 2, tight: true }]])
     .use(toHtmlAST, { allowDangerousHtml: true })
 	.use(rehypeRaw)
+	.use(rehypeExternalLinks, { target: '_blank' })
     .use([rehypeSlug, rehypeAutolinkHeadings])
     .use(rehypeCodeTitles)
     .use(rehypePrettyCode, {

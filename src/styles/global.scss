@@ -64,6 +64,35 @@
   }  
 
   h2 {
-    @apply mb-4 text-3xl font-black leading-none tracking-tight md:text-4xl
+    @apply my-6 text-3xl font-black leading-none tracking-tight md:text-4xl
+  }  
+  
+  h3 {
+    @apply my-6 text-2xl font-black leading-none tracking-tight md:text-3xl
+  } 
+  
+  h4 {
+    @apply my-6 text-xl font-black leading-none tracking-tight md:text-2xl
   }    
+  
+  h5 {
+    @apply my-6 text-lg font-black leading-none tracking-tight md:text-xl
+  }   
+
+  h6 {
+    @apply my-6 text-sm font-black leading-none tracking-tight md:text-base
+  }  
+
+  hr {
+    @apply my-8 border-t
+  }
+}
+
+/* no one has to know 🤫 */
+[id]::before {
+  content: '';
+  display: block;
+  height:      75px;
+  margin-top: -75px;
+  visibility: hidden;
 }
