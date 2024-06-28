@@ -1,13 +1,14 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import Giscus from '@giscus/svelte'
-  import { setGiscusTheme } from '$lib/components/giscus/'
 
   let giscusTheme: string = 'dark'
   onMount(() => {
     const storedTheme = localStorage.getItem('mode-watcher-mode')
     giscusTheme = storedTheme ? storedTheme : 'dark'
   })
+
+  export let title: string
 </script>
 
 <Giscus
@@ -16,8 +17,8 @@
   repoId="R_kgDOLbvKEw"
   category="General"
   categoryId="DIC_kwDOLbvKE84CducC"
-  mapping="pathname"
-  term="Welcome to @giscus/react component!"
+  mapping="title"
+  term={title}
   reactionsEnabled="1"
   emitMetadata="0"
   inputPosition="top"

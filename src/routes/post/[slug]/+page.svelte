@@ -33,4 +33,4 @@
   <p><strong>Shoutout!</strong></p>
 </article>
 
-<Giscus />
+<Giscus title={data.meta.title} />
