@@ -1,15 +1,11 @@
 <script lang="ts">
   import { ModeWatcher } from 'mode-watcher'
-  import { Analytics } from '$lib/components/analytics'
-
   import { Header, Footer } from '$lib/components'
-
   import LiteYouTubeEmbed from '$lib/components/embed/youtube.svelte'
+  import { Analytics } from '$lib/components/analytics'
 
   import '../styles/styles.scss'
 </script>
-
-<Analytics />
 
 <ModeWatcher defaultMode={'dark'} />
 
@@ -24,3 +20,5 @@
 
   <Footer />
 </div>
+
+<Analytics />

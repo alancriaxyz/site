@@ -1,10 +1,22 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   import { config } from '$lib/config'
   import { cn } from '$lib/utils/theme'
   import { page } from '$app/stores'
   import { Button, buttonVariants } from '$lib/components/ui/button'
   import { Icon } from '$lib/components'
-  import { toggleMode } from 'mode-watcher'
+  import { setMode, mode } from 'mode-watcher'
+  import { setGiscusTheme } from '$lib/components/giscus/'
+
+  function handleModeChange() {
+    if ($mode === 'light') {
+      setMode('dark')
+      setGiscusTheme('dark')
+    } else {
+      setMode('light')
+      setGiscusTheme('light')
+    }
+  }
 </script>
 
 <header
@@ -46,7 +58,11 @@
           <Icon.youtube class="h-4 w-4" />
         </div>
       </a>
-      <Button on:click={toggleMode} variant="ghost" class="w-9 px-0" size="sm">
+      <Button
+        on:click={handleModeChange}
+        variant="ghost"
+        class="w-9 px-0"
+        size="sm">
         <Icon.sun
           class="dark:-roate-90 h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:scale-0" />
         <Icon.moon

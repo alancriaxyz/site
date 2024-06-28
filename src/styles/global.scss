@@ -84,7 +84,7 @@
   }  
 
   hr {
-    @apply my-8 border-t
+    @apply my-2 border-t
   }
 }
 
@@ -95,4 +95,9 @@
   height:      75px;
   margin-top: -75px;
   visibility: hidden;
+}
+
+.comments-container {
+  max-height: 640px;
+  overflow-y: scroll;
 }

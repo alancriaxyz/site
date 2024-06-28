@@ -7,7 +7,8 @@ export async function load({ params: { slug } }) {
 		
 		return {
 			meta: post.metadata,
-			content: post.default
+			content: post.default,
+			url: `${config.url}/post/${slug}`
 		}
 	} catch (e) {
 		error(404, `Post does not exist`)
