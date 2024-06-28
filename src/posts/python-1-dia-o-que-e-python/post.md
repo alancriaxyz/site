@@ -1,43 +1,11 @@
 ---
-title: O que é Python?
+title: Python 1 Dia - O que é Python?
 description: História, filosofia e os princípios do Python.
 datePublished: '2024-03-10'
 dateModified: '2024-03-10'
 ---
 
-## E aí cria, firmeza? 👊🏽
-
-{% highlight txt %}
-"Espero que esta carta te encontre numa legal, com saúde harmonia e tal. Eu tô por aqui na fé na paz, na correria adiantos e mais."
-(Saudades Mil - 509-e)
-{% endhighlight %}
-
-###### Antes de começarmos, vamos trocar uma ideia.
-
-[Após o lançamento desse curso gratuíto](https://alancria.xyz/python-365-dias), recebi uma enxurrada de parabéns pela minha escolha de compartilhar esses conhecimentos. Eu esperava um certo movimento, mas não na quantidade que pipocou. Deixa eu compartilhar rapidinho com vocês o resultado da campanha:
-
-| Origem     | Likes | Comentários | Seguidores |
-| ---------- | ----- | ----------- | ---------- |
-| TabNews    | 18    | 9           | 0          |
-| Twitter    | 2     | 6           | 9          |
-| Linkedin   | 21    | 12          | 12         |
-| Github     | 0     | 0           | 8          |
-| Nesse site | 5     | 58          | 0          |
-| Total      | 46    | 85          | 29         |
-
-Até agora, tivemos _+2 mil visualizações_
-
-> Gratidão aí a todos, vocês são fod@.
-
-Eu to ligado, esses números servem apenas para mostrar para minha mãe e falar que o filho dela está no caminho certo.
-Pois já dizia a mãe do Brown:
-
-{% highlight txt %}
-Filho, por você ser preto, você tem que ser duas vezes melhor.
-(A Vida é Desafio - Racionais MC's)
-{% endhighlight %}
-
-Então chega de lorota e vamos dar início a este curso, pois tem muita gente a fim de aprender.
+## Conteúdo
 
 ## O pai da criança
 
@@ -45,8 +13,7 @@ Um maluco gringo chamado [Guido van Rossum](https://pt.wikipedia.org/wiki/Guido_
 
 Guido van Rossum, além de ter problemas de tédio durante o Natal, onde esse tédio pode fazer ele criar uma das TOP 3 linguagens de programação mais usadas no mundo. Ele gosta de tomar uma breja, tem nosso respeito, não? Eu chamaria para o churrasco de domingo tranquilo.
 
-<img src="https://imagedelivery.net/rERI1EAHgESvdqY7zivYhQ/541be3ed-ca9d-4450-9e59-3a52c01c1500/compression=fast,w=512,h=758,fit=crop,format=webp" alt="Meme Vscode Dev Atom" width="512" height="758">
-*Guido van Rossum - Rei do Python*
+{% img src="[first-commits.png](https://imagedelivery.net/rERI1EAHgESvdqY7zivYhQ/541be3ed-ca9d-4450-9e59-3a52c01c1500/compression=fast,w=512,h=758,fit=crop,format=webp)" alt="Guido van Rossum - Rei do Python" %}
 
 Uma curiosidade é que o Rossum não escolheu esse nome Python porque ele gosta de cobra (lá ele!), na verdade o nome Python vem do programa de humor inglês que se chama ["Monty Python's Flying Circus"](https://en.wikipedia.org/wiki/Monty_Python%27s_Flying_Circus), que é um grande sucesso. Guido Van Rossum era super fã desse programa de TV. Então, ele decidiu usar o nome Python para homenagear o programa que tanto gostava.
 

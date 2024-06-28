@@ -15,7 +15,7 @@ import { transformerNotationHighlight } from '@shikijs/transformers'
 import { rehypeCopyCode, rehypeUnwrapImages } from './plugins.js'
 import toHtmlString from 'rehype-stringify'
 
-const images = `https://raw.githubusercontent.com/mattcroat/joy-of-code/main/posts`
+const images = `https://raw.githubusercontent.com/alancriaxyz/site/tree/main/src/posts`
 
 /**
  * Returns post slug.
@@ -65,7 +65,7 @@ function searchAndReplace(content, slug) {
 			return `
 				<video controls>
 				<source
-					src="${images}/${slug}/images/${src}"
+					src="${images}/${slug}/assets/${src}"
 					type="video/mp4"
 				/>
 				</video>`.trim()
@@ -73,7 +73,7 @@ function searchAndReplace(content, slug) {
 		.replace(image, (_, src, alt) => {
 			return `
 				<img
-					src="${images}/${slug}/images/${src}"
+					src="${images}/${slug}/assets/${src}"
 					alt="${alt}"
 					loading="lazy"
 				/>`.trim()
