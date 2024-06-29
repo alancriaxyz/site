@@ -50,8 +50,6 @@
 	@apply px-2 py-2 border-b-2;
 }
 
-
-.prose img,
 .prose iframe,
 .prose video,
 .prose p,
@@ -70,3 +68,11 @@
 .prose blockquote > p {
 	@apply mb-0;
 }
+
+.prose .post-image {
+    @apply text-center mb-6;
+}  
+
+.prose .post-image img {
+    @apply rounded-lg mx-auto mb-2;
+}  

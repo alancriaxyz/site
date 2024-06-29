@@ -1,19 +1,19 @@
 ---
 title: Python 365 Dias
 description: Domine do zero ao avançado. Explore automação, análise de dados, IA e muito mais. Totalmente gratuito!
-datePublished: '2024-03-08'
-dateModified: '2024-03-08'
+datePublished: '2024-03-08 00:00:00'
+dateModified: '2024-03-08 00:00:00'
 ---
 
 ## Conteúdo
 
 ## Lista das Aulas
 
-| Dia | Tópico                                                          | Dificuldade                                          |
-| --- | --------------------------------------------------------------- | ---------------------------------------------------- |
-| 1   | [O que é Python?](https://alancria.xyz/python-1-de-365)         | ![Básico](https://img.shields.io/badge/Básico-green) |
-| 2   | [Por que estudar Python?](https://alancria.xyz/python-2-de-365) | ![Básico](https://img.shields.io/badge/Básico-green) |
-| 3   | [Mercado de Trabalho](https://alancria.xyz/python-3-de-365)     | ![Básico](https://img.shields.io/badge/Básico-green) |
+| Dia | Tópico                                                                      | Dificuldade                                          |
+| --- | --------------------------------------------------------------------------- | ---------------------------------------------------- |
+| 1   | [O que é Python?](https://alancria.xyz/post/o-que-e-python)                 | ![Básico](https://img.shields.io/badge/Básico-green) |
+| 2   | [Por que estudar Python?](https://alancria.xyz/post/por-que-estudar-python) | ![Básico](https://img.shields.io/badge/Básico-green) |
+| 3   | [Mercado de Trabalho](https://alancria.xyz/python-3-de-365)                 | ![Básico](https://img.shields.io/badge/Básico-green) |
 
 ## Informações Importantes
 

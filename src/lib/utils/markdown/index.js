@@ -15,14 +15,14 @@ import { transformerNotationHighlight } from '@shikijs/transformers'
 import { rehypeCopyCode, rehypeUnwrapImages } from './plugins.js'
 import toHtmlString from 'rehype-stringify'
 
-const images = `https://raw.githubusercontent.com/alancriaxyz/site/tree/main/src/posts`
+const images = `https://raw.githubusercontent.com/alancriaxyz/site/main/src/posts`
 
 /**
  * Returns post slug.
  * @param {string} filename
  */
 function getSlug(filename) {
-	return filename.split('/').at(-1)?.replace('.md', '') ?? ''
+	return filename.split('/').slice(-2, -1)[0];
 }
 
 /**
@@ -71,12 +71,12 @@ function searchAndReplace(content, slug) {
 				</video>`.trim()
 		})
 		.replace(image, (_, src, alt) => {
-			return `
+			return `<div class="post-image">
 				<img
 					src="${images}/${slug}/assets/${src}"
 					alt="${alt}"
 					loading="lazy"
-				/>`.trim()
+				/><em>"${alt}"</em></div>`.trim()
 		})
 		.replace(youtube, (_, id, title) => {
 			return `<lite-youtube videoid="${id}" playlabel="${title}"></lite-youtube>`.trim()
