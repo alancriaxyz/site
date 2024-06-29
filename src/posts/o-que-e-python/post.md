@@ -53,6 +53,6 @@ Atualmente, escolhi Python para me ajudar em projetos de automação e inteligê
 
 ## Próxima aula
 
-Seguindo o [cronograma de conteúdo](http://localhost:5173/post/python-365-dias#lista-das-aulas), na próxima aula é certo que vamos trocar uma ideia sobre o porquê estudar Python. Vou abordar sobre o que é possível criar, o mercado de trabalho e o futuro 🔮.
+Seguindo o [cronograma de conteúdo](https://alancria.xyz/post/python-365-dias#lista-das-aulas), na próxima aula é certo que vamos trocar uma ideia sobre o porquê estudar Python. Vou abordar sobre o que é possível criar, o mercado de trabalho e o futuro 🔮.
 
 Para receber a próxima atualização, coloque nos comentários: BORA CRIA!

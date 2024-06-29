@@ -13,7 +13,7 @@ dateModified: '2024-03-08 00:00:00'
 | --- | --------------------------------------------------------------------------- | ---------------------------------------------------- |
 | 1   | [O que é Python?](https://alancria.xyz/post/o-que-e-python)                 | ![Básico](https://img.shields.io/badge/Básico-green) |
 | 2   | [Por que estudar Python?](https://alancria.xyz/post/por-que-estudar-python) | ![Básico](https://img.shields.io/badge/Básico-green) |
-| 3   | [Mercado de Trabalho](https://alancria.xyz/python-3-de-365)                 | ![Básico](https://img.shields.io/badge/Básico-green) |
+| 3   | [Mercado de Trabalho](https://alancria.xyz/post/mercado-de-trabalho-python) | ![Básico](https://img.shields.io/badge/Básico-green) |
 
 ## Informações Importantes
 

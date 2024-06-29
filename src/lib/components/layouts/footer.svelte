@@ -90,7 +90,7 @@
     </nav>
 
     <div class="flex items-center">
-      <p class="text-sm">© {currentYear} - {config.logo}</p>
+      <p class="text-sm">© {currentYear}</p>
     </div>
   </div>
 </footer>

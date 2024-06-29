@@ -58,7 +58,7 @@ async function parseMarkdown(content, slug) {
 function searchAndReplace(content, slug) {
 	const video = /{% video src="(.*?)" %}/g
 	const image = /{% img src="(.*?)" alt="(.*?)" %}/g
-	const youtube = /{% youtube id="(.*?)" title="(.*?)" %}/g
+	const youtube = /{% youtube id="(.*?)" title="(.*?)"(?: start="(\d+)")? %}/g;
 
 	return content
 		.replace(video, (_, src) => {
@@ -78,8 +78,9 @@ function searchAndReplace(content, slug) {
 					loading="lazy"
 				/><em>"${alt}"</em></div>`.trim()
 		})
-		.replace(youtube, (_, id, title) => {
-			return `<lite-youtube videoid="${id}" playlabel="${title}"></lite-youtube>`.trim()
+		.replace(youtube, (_, id, title, start) => {
+			const videoStartAt = start ? `params="start=${start}"` : '';
+			return `<lite-youtube videoid="${id}" playlabel="${title}" ${videoStartAt}></lite-youtube>`.trim();
 		})
 }
 

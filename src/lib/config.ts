@@ -1,5 +1,4 @@
 export const config = {
-	logo: "@alancriaxyz",
 	url: "https://alancria.xyz",
 	author: {
 		name: "Alan Alves"

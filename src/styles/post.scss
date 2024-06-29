@@ -14,6 +14,19 @@
     @apply rounded-lg shadow-lg shadow-black bg-black mx-auto my-auto dark:shadow-sm dark:shadow-current dark:bg-white;
 }
 
+.prose header + h2[id*="conteúdo"] + ul > li {
+	@apply my-2 leading-8 list-none ml-0;
+}
+
+.prose header + h2[id*="conteúdo"] + ul > li::before {
+	content: '🔥';
+	padding-right: 5px;
+}
+
+.prose ul > li {
+	@apply list-disc ml-5;
+}
+
 .prose ul > li > a {
 	text-decoration: none;
 	font-weight: inherit;
@@ -23,15 +36,6 @@
 .prose li > a {
 	text-decoration: underline;
 	text-underline-offset: 4px;
-}
-
-.prose li {
-	@apply my-2 leading-8;
-}
-
-.prose ul li::before {
-    content: '🔥';
-    padding-right: 5px;
 }
 
 .prose table {
@@ -54,6 +58,7 @@
 .prose video,
 .prose p,
 .prose ol,
+.prose ul,
 .prose pre,
 .prose blockquote,
 .prose details,
@@ -62,7 +67,7 @@
 }
 
 .prose blockquote {
-	@apply text-2xl italic font-semibold text-gray-900 border-double border-y-4 my-6 py-6 border-current dark:text-white
+	@apply text-balance text-center text-2xl italic font-semibold text-gray-900 border-double border-y-4 my-6 py-6 border-current dark:text-white
 }
 
 .prose blockquote > p {
@@ -76,3 +81,12 @@
 .prose .post-image img {
     @apply rounded-lg mx-auto mb-2;
 }  
+
+/* no one has to know 🤫 */
+[id]::before {
+	content: '';
+	display: block;
+	height:      75px;
+	margin-top: -75px;
+	visibility: hidden;
+  }

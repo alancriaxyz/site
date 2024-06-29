@@ -1,34 +1,37 @@
 ---
-title: Mercado de Trabalho
+title: Mercado de Trabalho & Python
 description: Descubra o futuro do trabalho em tecnologia e a era da IA com Python.
-datePublished: '2024-03-13'
-dateModified: '2024-03-13'
+datePublished: '2024-03-13 00:00:00'
+dateModified: '2024-03-13 00:00:00'
 ---
 
-## Fala, Cria! 👊🏽
+## Conteúdo
+
+## Intro
 
 Hoje o papo vai ser sobre o mercado de trabalho. Foi meio cabuloso pensar em escrever essa aula, sabe por quê? Pow, estamos à beira de uma revolução tecnológica, não está por dentro? Então fica aí que tu vai ficar bolado com o que vem por aí.
 
-Refletindo: Quem sou eu para opinar sobre o mercado de trabalho? Não tive acesso a estudos privilegiados, MBA ou certificados. Ralei muito e busquei oportunidades no digital. Em 20 anos, foi mais luta para sustentar minha família do que ser alguém que entenderia sobre mercado de trabalho.
+Vou abordar o mercado de trabalho de forma única, mostrando o histórico do que nos foi vendido e o tamanho do problema deixado.
 
-Mas vou abordar o mercado de trabalho de forma única, mostrando o histórico do que nos foi vendido e o tamanho do problema deixado. Este post é completo para amantes da tecnologia que desejam trabalhar com Python ou não. Vamos nessa?
+Este post é completo para os amantes da tecnologia que desejam trabalhar com Python ou não. Vamos nessa?
 
-# A mídia
+## A mídia
 
-Vamos começar com o canto da sereia. A mídia, jornais, influenciadores e toda uma galera que ama vender sonhos ficam tentando dizer que a área é fácil. Talvez você tenha lido algo do tipo: [Até 2025 o Brasil irá precisar de 530 mil vagas na área da tecnologia](https://g1.globo.com/trabalho-e-carreira/noticia/2023/05/31/brasil-tera-deficit-de-530-mil-profissionais-de-tecnologia-ate-2025-mostra-estudo-do-google.ghtml). Nós nos iludimos em pensar que estamos perdendo o bonde, porém não é bem assim. Ninguém fala da complexidade que é entrar nesse mercado.
+Vamos começar com o canto da sereia. A mídia, jornais, influenciadores e toda uma galera que ama vender sonhos ficam tentando dizer que a área é fácil. Talvez você tenha lido algo do tipo: [Até 2025 o Brasil irá precisar de 530 mil vagas na área da tecnologia](https://g1.globo.com/trabalho-e-carreira/noticia/2023/05/31/brasil-tera-deficit-de-530-mil-profissionais-de-tecnologia-ate-2025-mostra-estudo-do-google.ghtml). Nós nos iludimos em pensar que estamos perdendo o bonde [(FOMO)](https://pt.wikipedia.org/wiki/Síndrome_de_FOMO), porém não é bem assim.
 
-Os influenciadores que tentam te vender cursos para virar programador(a) em 6 meses e com isso você poderá ganhar até R$ 20 mil, muita gente acredita. Sempre vai ter alguém tentando te fazer de mané, com algo fácil e geralmente isso encaixa na mente de alguém que está correndo atrás de uma oportunidade, então você deve ficar muito ligado.
+Poucos são o que falam sobre a complexidade que é entrar nesse mercado. Os influenciadores que tentam te vender cursos para virar programador(a) em 6 meses e com isso você poderá ganhar até R$ 20 mil, muita gente acredita.
+
+Sempre vai ter alguém tentando te fazer de mané, com algo fácil e geralmente isso encaixa na mente de alguém que está correndo atrás de uma oportunidade, então você deve ficar muito ligado.
 
 Uma vez o Mano Brown falou assim:
 
-> "Se você pretende começar a programar depois de terminar o curso gratuito do Cria, aprenda logo a ter um pensamento crítico, tenha muita curiosidade, faça suas próprias pesquisas e tome decisões baseadas em fatos e não pela emoção do que tentam te vender, demorou?"
+> "Se você pretende começar a programar, aprenda logo a ter um pensamento crítico, tenha muita curiosidade, faça suas próprias pesquisas e tome decisões baseadas em fatos e não pela emoção do que tentam te vender, demorou?"
 
 Não, ele não falou isso, mas com certeza falaria se fosse um programador.
 
-# Pandemia
+## Pandemia
 
-Quem aí está com saudade?
-Da pandemia? Claro que não, doidão (dona)! Estou falando daqueles discursos:
+Quem se lembra desse papo nessa época de pandemia:
 
 - Agora tudo é digital.
 - Nunca se usou tanto a internet.
@@ -41,10 +44,7 @@ Da pandemia? Claro que não, doidão (dona)! Estou falando daqueles discursos:
 
 Todo o mercado de tecnologia ficou em festa com todo esse movimento, eles deram o nome de [transformação digital](https://portal.fgv.br/noticias/pandemia-acelerou-processo-transformacao-digital-empresas-brasil-revela-pesquisa), vai se ligando no que vai ser a verdadeira transformação que ninguém previu. As Big Tech (Google, Netflix, Facebook, Apple e outras) [ficaram excitadas com todo esse movimento](https://itif.org/publications/2022/06/01/power-big-tech-peaked-during-pandemic-disruptive-forces-are-rise/), os velhotes de Wall Street não paravam de contar dinheiro com as [altas incríveis das ações dessas empresas](https://www.cnbc.com/2021/08/16/sp-500-doubles-from-its-pandemic-bottom-marking-the-fastest-bull-market-rally-since-wwii.html).
 
-{% include embeds/imagem.html id="01719db8-70a7-4857-15ed-861373baea00"
-                              alt="Crescimento da S&P 500 durante a pandemia"
-                              width=760
-                              height=574 %}
+{% img src="SP500.avif" alt="Crescimento da S&P 500 durante a pandemia" %}
 
 E com isso, as mídias começaram a preencher nossas mentes com a ideia de que o futuro estava no trabalho digital.
 
@@ -69,7 +69,7 @@ Mídia
 = ?
 {% endhighlight %}
 
-# Fundo de Investimentos
+## Fundos de Investimentos
 
 Startups de tecnologia dependem de investimentos para crescer. Elas participam de rodadas de captação de recursos com fundos de investimento, que administram dinheiro de vários investidores. Esse tipo de investimento é conhecido como capital de risco ou venture capital.
 
@@ -100,7 +100,7 @@ Mídia
 = ?
 {% endhighlight %}
 
-# Inflação
+## Inflação
 
 Você deve ta se questionando:
 
@@ -133,7 +133,7 @@ Mídia
 = ?
 {% endhighlight %}
 
-# Layoffs
+## Layoffs
 
 No começo, as demissões era algo meio tímido, até surgiam conversas sobre um tal de "layoff humanizado". Parece piada, né?
 
@@ -174,7 +174,7 @@ Mídia
 = ?
 {% endhighlight %}
 
-# OpenAi
+## OpenAi
 
 Em 2019 [a Microsoft investiu nada mais nada menos que 1 bilhão de dólares](https://openai.com/blog/microsoft-invests-in-and-partners-with-openai) pra ser o único parceiro em nuvem da então desconhecida empresa OpenAI. Isso fez com que as duas empresas arregaçarem as mangas e trabalhassem juntas no desenvolvimento técnico de um LLM.
 
@@ -213,7 +213,7 @@ Mídia
 = ?
 {% endhighlight %}
 
-# IA
+## IA
 
 Depois da OpenAI, outras empresas como Google, Twitter, Meta começam a lançar os seus próprios LLM, além da explosão de vários LLM opensource. Então começamos a ver uma explosão de IA's para todos os lados e chegamos a um nível que não dá para acompanhar, pois a cada semana é uma nova versão do nosso futuro, a cada semana se fala em mais e mais substituições e com isso vamos ver aquelas páginas de layoffs cada vez mais cheias.
 
@@ -241,7 +241,7 @@ Mídia
 = Você precisa se adaptar
 {% endhighlight %}
 
-# IndieHacker
+## IndieHacker
 
 Chegamos ao tópico onde eu acredito que cada vez mais pessoas vão buscar esse caminho de alguma forma, pois esse caminho trata de pessoas que são autodidatas, elas não ficam bitoladas em apenas uma linguagem, framework ou modelo de trabalho. São pessoas que ganham a vida na internet, lançando pequenos produtos para determinados nichos, esse grupo consegue dominar marketing, vendas, codificação e o que precisa fazer, são às vezes uma única pessoa ou, no máximo, um pequeno grupo. Já existem muitas pessoas que vivem dessa forma, o caso de maior sucesso é o de [@levelsio](https://twitter.com/levelsio), que fatura R$ 2.485.000,00 mensalmente, sozinho e com vários pequenos projetos, boa parte deles utilizando a API da OpenAI.
 

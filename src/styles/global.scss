@@ -87,12 +87,3 @@
     @apply my-2 border-t
   }
 }
-
-/* no one has to know 🤫 */
-[id]::before {
-  content: '';
-  display: block;
-  height:      75px;
-  margin-top: -75px;
-  visibility: hidden;
-}

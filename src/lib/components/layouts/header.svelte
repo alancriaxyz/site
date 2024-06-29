@@ -25,7 +25,7 @@
     <div>
       <a href="/">
         <span class="text-sm font-bold">
-          {config.logo}
+          <img src="/favicon-32x32.png" alt="Logo" class="h-6" />
         </span>
       </a>
     </div>

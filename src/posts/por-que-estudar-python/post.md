@@ -1,62 +1,44 @@
 ---
 title: Por que estudar Python?
 description: Desbloqueie todo o potencial do Python para automatizar tarefas, trabalhar com IA e se destacar no mercado!
-datePublished: '2024-03-11'
-dateModified: '2024-03-11'
+datePublished: '2024-03-11 00:00:00'
+dateModified: '2024-03-11 00:00:00'
 ---
 
-## E aí Cria, firmeza? 👊🏽
-
-Segundo dia, certo?
-
-Se liga nessa fita: Mais cedo, estava aqui refletindo, vagando por essa [ideia braba de escrever por 365 dias](https://alancria.xyz/python-365-dias), aí tive um estalo do que preciso fazer.
-
-> "Preciso acelerar o beat da escrita e mandar um speed flow nos próximos dias."
-
-Eu tô ligado que às vezes viajo demais no texto, o que acaba prolongando o meu processo de criação. E ainda temos um deserto pra andar, certo? Vou tentar ser mais direto nos próximos posts, porque acho que assim será possível viajar melhor quando chegarmos nas paradas de automação, ia, etc. Firmeza?
+## Conteúdo
 
 ## Papo Direto
 
-Se você está começando agora nesse mundo da programação, saiba que Python não é a única [linguagem de programação](https://alancria.xyz/python-1-de-365#linguagem-de-programação) disponível.
+Se você está começando agora nesse mundo da programação, saiba que Python não é a única linguagem de programação disponível.
 
-Se você falar com algum(a) desenvolvedor(a) de outra linguagem, que você está aprendendo Python aqui com o CRIA, há uma grande chance dessa pessoa falar:
+Se você falar com algum(a) desenvolvedor(a) de outra linguagem que está aprendendo Python aqui com o CRIA, há uma grande chance dessa pessoa falar:
 
-- Se liga, a linguagem que eu sei é melhor!
+- A linguagem que eu sei é melhor!
 - Python? Ah, não é tão boa.
 - Estuda outra que tenha mais mercado.
 
-Muitos vão tentar falar isso, pois eles são amantes da linguagem, fazem amor com o código. Não caia nessa cilada até ter a certeza do que é a arte de programar. Se você não dominar uma primeira linguagem e já ficar mudando, porque fulano falou isso ou cicrano falou aquilo, existe uma chance de você ficar cansado e isso acabar levando você a uma desistência. Eu ficaria bolado demais em te perder.
+Muitos vão falar isso porque amam a linguagem. Não caia nessa cilada sem antes entender a arte de programar. Se você não dominar uma linguagem e ficar mudando por opiniões alheias, pode acabar desistindo. Eu ficaria muito triste em te perder.
 
-Aqui neste curso, você vai aprender fundamentos que são o básico para que você possa escolher outra linguagem no futuro, se necessário, _o que eu acho bem difícil_.
+Neste curso, você vai aprender os fundamentos básicos. Isso te permitirá escolher outra linguagem no futuro, se necessário (o que eu acho bem difícil).
 
 Eu agradeço a todas as linguagens pelas quais já passei: Delphi; PHP; ActionScript; Ruby; VB; C#;
 Sabe por que eu agradeço? Todas pagaram muito bem os meus boletos em cada época que estive com elas!
 
-Dentro deste mundo da programação, tem uma pá de ego e donos da razão, ignore toda essa parada e foque no seu aprendizado.
-Dentro da comunidade de desenvolvedores, não todos, mas algumas pessoas ficam em brigas para defender qual é a melhor tecnologia ou linguagem de programação. Vá logo se acostumando.
+Dentro do mundo da programação, há muito ego e pessoas querendo ter razão. Ignore isso e foque no seu aprendizado. Na comunidade de desenvolvedores, alguns brigam para defender qual é a melhor tecnologia ou linguagem. Vá se acostumando.
 
-A verdade é que a melhor linguagem é aquela que paga os seus boletos e a melhor linguagem vai depender da necessidade, se você precisa criar um sistema para o mercadinho do seu João, você não precisa fazer isso em uma linguagem parruda e também não precisa fazer isso em [COBOL](https://pt.wikipedia.org/wiki/COBOL). Tudo vai depender da necessidade, mas posso garantir a você que o Python vai cobrir boa parte do que você precisa fazer. Boa parte do que você vai fazer serão coisas que não vão exigir um mega controle de memória ou alto processamento. Se um dia precisar de algo mais robusto, com certeza você já vai saber escolher outra linguagem ou, melhor ainda, vai entender como fazer isso com Python, beleza?
+A verdade é que a melhor linguagem é aquela que paga seus boletos. Se você precisa criar um sistema para o mercadinho do seu João, não precisa usar uma linguagem parruda ou algo como [COBOL](https://pt.wikipedia.org/wiki/COBOL). Python vai cobrir boa parte do que você precisa. A maioria das tarefas não exigirá um mega controle de memória ou alto processamento. Se precisar de algo mais robusto, você já saberá escolher outra linguagem ou entender como fazer isso com Python.
 
 ## Python na cena
 
 Bem, você se lembra que o nosso amigo [Guido van Rossum](https://alancria.xyz/python-1-de-365#o-pai-da-criança) criou o Python em 1989, certo? Durante os primeiros anos, a linguagem fez mais sucesso no meio dos professores acadêmicos. Não era geral quem usava, mas a linguagem explodiu em seu uso a partir dos anos 2000, quando muito mais pessoas começaram a usar.
 
-Vou te mostrar algo interessante, saca só esse vídeo de um nerd (calma eu tb sou nerd) cientista de dados do canal [Data Is Beautiful (Dados são bonitos)](https://www.youtube.com/@DataIsBeautifulOfficial), o cara simplesmente fez uma compilação das linguagens de programação mais populares do mundo entre os anos 1965 e 2022. Vou deixar o video já no minuto onde surge o Python, olha que viagem.
+Vou te mostrar algo interessante, saca só esse vídeo do canal [Data Is Beautiful](https://www.youtube.com/@DataIsBeautifulOfficial), eles fizeram uma compilação das linguagens de programação mais populares do mundo entre os anos 1965 e 2022. Vou deixar o video já no minuto onde surge o Python, olha que viagem.
 
-**Atenção: O vídeo tem uma música chata, abaixe o seu volume antes do play.**
-
-{% include embeds/youtube.html id="qQXXI5QFUfw" start=238 %}
+{% youtube id="qQXXI5QFUfw" title="Most Popular Programming Languages 1965 - 2022" start="243" %}
 
 Lembrando que isso não é para dizer que Python é a melhor opção, ou que você tem que escolhê-la sem hesitar, mas apenas para mostrar qual a linguagem é mais popular.
 
-{% include embeds/imagem.html id="0c2bd357-90b2-4b23-df76-d7403940dd00"
-                              alt="Python é mais utilizado, não a melhor!"
-                              width=760
-                              height=574 %}
-
-> Como foi que o Python conseguiu dar um grau de moto em 2018 e vem subindo a ladeira até então?
-
-_ATENÇÃO: OPINIÕES PRÓPRIAS_
+> Por que o Python teve esse crescimento exponencial em 2018?
 
 Bem, é difícil falar exatamente com precisão, mas seguem alguns motivos que fizeram decolar até o momento:
 
@@ -108,10 +90,6 @@ Apesar de suas vantagens, Python não é o Rei Perfeito. Linguagens como C/C++ o
 
 ## Próxima aula
 
-Na próxima aula é certo que vamos trocar uma ideia sobre o mercado de trabalho, aí sim, não é? Tem trabalho nessa área? Dá para ganhar um Din?
+Seguindo o [cronograma de conteúdo](https://alancria.xyz/post/python-365-dias#lista-das-aulas), na próxima aula é certo que vamos trocar uma ideia sobre o mercado de trabalho com Python.
 
-[(Leia aqui o cronograma do curso.)](https://alancria.xyz/python-365-dias#conteúdo)
-
-Para receber a próxima atualização, coloque nos comentários: _BORA CRIA!_
-
-{% include post_feedback_footer.md %}
+Para receber a próxima atualização, coloque nos comentários: **BORA CRIA**
