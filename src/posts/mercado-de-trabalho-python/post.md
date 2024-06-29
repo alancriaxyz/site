@@ -44,7 +44,7 @@ Quem se lembra desse papo nessa época de pandemia:
 
 Todo o mercado de tecnologia ficou em festa com todo esse movimento, eles deram o nome de [transformação digital](https://portal.fgv.br/noticias/pandemia-acelerou-processo-transformacao-digital-empresas-brasil-revela-pesquisa), vai se ligando no que vai ser a verdadeira transformação que ninguém previu. As Big Tech (Google, Netflix, Facebook, Apple e outras) [ficaram excitadas com todo esse movimento](https://itif.org/publications/2022/06/01/power-big-tech-peaked-during-pandemic-disruptive-forces-are-rise/), os velhotes de Wall Street não paravam de contar dinheiro com as [altas incríveis das ações dessas empresas](https://www.cnbc.com/2021/08/16/sp-500-doubles-from-its-pandemic-bottom-marking-the-fastest-bull-market-rally-since-wwii.html).
 
-{% img src="SP500.avif" alt="Crescimento da S&P 500 durante a pandemia" %}
+{% img src="sp500.png" alt="Crescimento da S&P 500 durante a pandemia" %}
 
 E com isso, as mídias começaram a preencher nossas mentes com a ideia de que o futuro estava no trabalho digital.
 
