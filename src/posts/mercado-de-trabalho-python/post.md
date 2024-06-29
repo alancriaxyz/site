@@ -56,18 +56,7 @@ Vi várias empresas aqui no Brasil abrindo turmas e mais turmas para formar novo
 
 Muitas pessoas, até mesmo aquelas que eu jamais imaginaria se interessarem por esse campo, começaram a me perguntar sobre cursos e queriam mudar de área. O mercado absorveu toda essa demanda?
 
-Me segue no flow, vai somando as ideias:
-
-{% highlight txt %}
-Mídia
-
-- Pandemia
-- Seja Programador(a)!
-
----
-
-= ?
-{% endhighlight %}
+Me segue no flow.
 
 ## Fundos de Investimentos
 
@@ -75,14 +64,13 @@ Startups de tecnologia dependem de investimentos para crescer. Elas participam d
 
 Startups buscam grana para potencializar seu crescimento, gerando valorização tanto para elas quanto para os investidores. O objetivo é alinhar ações e metas para garantir um retorno financeiro expressivo no futuro, através da venda da empresa.
 
-Geralmente, para essas startups atingirem as metas, precisam melhorar o produto e, para isso, precisam de quem? De quem? Responde aí! _Programadores(as)._
+Geralmente, para essas startups atingirem as metas, precisam melhorar o produto e, para isso, precisam de quem? De quem? Responde aí! _Programadores._
 
-Então, você já consegue imaginar o que aconteceu na pandemia? Foi um rasgo de dinheiro, muitas empresas de tecnologia dobraram seu quadro de funcionários. Todo mundo ficou cego, como se a pandemia nunca fosse passar e o dinheiro nunca fosse acabar, o que importava era a transformação digital, certo?
+Então, você já consegue imaginar o que aconteceu na pandemia?
 
-{% include embeds/imagem.html id="0eab7a35-f595-48b4-4682-08f83462e200"
-                              alt="Contratações nas bigtechs durante a pandemia."
-                              width=760
-                              height=574 %}
+Foi um rasgo de dinheiro, muitas empresas de tecnologia dobraram seu quadro de funcionários. Todo mundo ficou cego, como se a pandemia nunca fosse passar e o dinheiro nunca fosse acabar, o que importava era a transformação digital, certo?
+
+{% img src="hires.png" alt="Contratações nas bigtechs durante a pandemia." %}
 
 Muita gente começou a querer programar da noite para o dia. A mídia falava que precisava de pessoas, a pandemia dizendo que devemos virar programadores e os investidores liberando grana para as startups contratarem cada vez mais profissionais, todos ficariam felizes, não é?
 
