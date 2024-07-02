@@ -1,8 +1,8 @@
 ---
 title: Hello GPT-4o
 description: O GPT-4o é a mais recente iteração do poderoso modelo de linguagem da OpenAI, projetado para revolucionar a geração de texto, imagem, áudio e vídeo.
-datePublished: '2024-05-13'
-dateModified: '2024-05-13'
+datePublished: '2024-05-13 00:00:00'
+dateModified: '2024-05-13 00:00:00'
 ---
 
 {% youtube id="tih3VnaTaPk" title="OpenAI GPT-4o | Primeiras Impressões e Alguns Teste com API" %}

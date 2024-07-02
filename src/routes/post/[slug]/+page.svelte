@@ -3,19 +3,15 @@
   import { Seo } from '$lib/components'
   import Clipboard from './clipboard.svelte'
   import Giscus from './giscus.svelte'
+  import { Tweet, Analytics, LiteYouTubeEmbed } from '$lib/components'
 
   export let data
 </script>
 
 <Seo {data} />
 
-<svelte:head>
-  <script
-    async
-    src="https://platform.twitter.com/widgets.js"
-    charset="utf-8"></script>
-</svelte:head>
-
+<Tweet />
+<LiteYouTubeEmbed />
 <Clipboard />
 
 <article class="prose">

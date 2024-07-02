@@ -14,11 +14,11 @@
     @apply rounded-lg shadow-lg shadow-black bg-black mx-auto my-auto dark:shadow-sm dark:shadow-current dark:bg-white;
 }
 
-.prose header + h2[id*="conteúdo"] + ul > li {
+.prose h2[id*="conteúdo"] + ul > li {
 	@apply my-2 leading-8 list-none ml-0;
 }
 
-.prose header + h2[id*="conteúdo"] + ul > li::before {
+.prose h2[id*="conteúdo"] + ul > li::before {
 	content: '🔥';
 	padding-right: 5px;
 }
