@@ -42,6 +42,16 @@
           )}>
           Posts
         </a>
+        <a
+          href="/post/python-365-dias"
+          class={cn(
+            'transition-colors hover:text-foreground/80 hover:underline',
+            $page.url.pathname === '/post/python-365-dias'
+              ? 'text-foreground'
+              : 'text-foreground/60'
+          )}>
+          Cursos
+        </a>
       </nav>
     </div>
 
