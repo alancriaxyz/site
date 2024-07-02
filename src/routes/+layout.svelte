@@ -1,7 +1,7 @@
 <script lang="ts">
   import { ModeWatcher } from 'mode-watcher'
   import { Header, Footer } from '$lib/components'
-  import LiteYouTubeEmbed from '$lib/components/embed/youtube.svelte'
+  import LiteYouTubeEmbed from '$lib/components/embeds/youtube.svelte'
   import { Analytics } from '$lib/components/analytics'
 
   import '../styles/styles.scss'

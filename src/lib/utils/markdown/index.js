@@ -59,6 +59,7 @@ function searchAndReplace(content, slug) {
 	const video = /{% video src="(.*?)" %}/g
 	const image = /{% img src="(.*?)" alt="(.*?)" %}/g
 	const youtube = /{% youtube id="(.*?)" title="(.*?)"(?: start="(\d+)")? %}/g;
+	const twitter = /{% twitter (https:\/\/twitter\.com\/\S+\/status\/\d+) %}/g;
 
 	return content
 		.replace(video, (_, src) => {
@@ -82,6 +83,17 @@ function searchAndReplace(content, slug) {
 			const videoStartAt = start ? `params="start=${start}"` : '';
 			return `<lite-youtube videoid="${id}" playlabel="${title}" ${videoStartAt}></lite-youtube>`.trim();
 		})
+		.replace(twitter, (_, url) => {
+			return `<blockquote class="twitter-tweet"
+								data-lang="en"
+								data-theme="dark"
+								data-conversation="none"
+								data-dnt="true"
+								data-align="center">
+						<a href="${url}">Tweet</a>
+					</blockquote>`.trim();
+		});		
+		
 }
 
 const markdownProcessor = unified()

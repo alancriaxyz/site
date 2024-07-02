@@ -74,29 +74,17 @@ Foi um rasgo de dinheiro, muitas empresas de tecnologia dobraram seu quadro de f
 
 Muita gente começou a querer programar da noite para o dia. A mídia falava que precisava de pessoas, a pandemia dizendo que devemos virar programadores e os investidores liberando grana para as startups contratarem cada vez mais profissionais, todos ficariam felizes, não é?
 
-Me segue no flow, vai somando as ideias:
-
-{% highlight txt %}
-Mídia
-
-- Pandemia
-- Seja Programador(a)!
-- Fundo de Investimentos
-
----
-
-= ?
-{% endhighlight %}
+Me segue no flow, vai somando as ideias.
 
 ## Inflação
 
-Você deve ta se questionando:
+Você deve estar se questionando:
 
-_Cria! O que tem a ver mídia, pandemia, inflação...? Só quero estudar Python e conseguir uma vaga._
+> Cria! O que tem a ver mídia, pandemia e inflação? Só quero estudar Python e conseguir uma vaga.
 
 Meu consagrado(a), se você não tiver uma visão 360° do mundo à sua volta, você perde oportunidades e não vai conseguir programar o mais importante, a sua própria vida, a linguagem é só um meio, você que tem que estar no controle, bora voltar? Confia em mim!
 
-Todo o caos do uso de máscaras, álcool, comércio abrindo e fechando resultou em desorganização, algo que nós humanos dominamos. O EUA aprovou diversos pacotes de estímulo econômico para acalmar a situação, aumentando a base monetária em $4 trilhões. "Cheat"
+Todo o caos do uso de máscaras, álcool, comércio abrindo e fechando resultou em desorganização, algo que nós humanos dominamos. O EUA aprovou diversos pacotes de estímulo econômico para acalmar a situação, aumentando a base monetária em $4 trilhões "Cheat".
 
 Se o governo imprime dinheiro, a inflação sobe, elevando as taxas de juros. Investidores preferem opções seguras e rentáveis. Diferente dos arriscados investimentos em startups, onde o risco e incerteza são maiores.
 
@@ -106,32 +94,19 @@ Pegou a visão?
 
 Com a escassez de recursos, as startups começaram a reduzir despesas de todas as formas, incluindo aqueles que tinham sido contratados para aumentar o quadro. Essa prática, conhecida como Layoff, ou o velho pé na bunda daqui do Brasil.
 
-Me segue no flow, vai somando as ideias:
-
-{% highlight txt %}
-Mídia
-
-- Pandemia
-- Seja Programador(a)!
-- Fundo de Investimentos
-- Inflação
-
----
-
-= ?
-{% endhighlight %}
+Me segue no flow.
 
 ## Layoffs
 
 No começo, as demissões era algo meio tímido, até surgiam conversas sobre um tal de "layoff humanizado". Parece piada, né?
 
-_Algumas empresas justificaram assim:_
+Algumas empresas justificaram assim:
 
 - Estamos realinhando o produto
 
 - Vamos investir em novas frentes
 
-_E umas poucas admitiam a real:_
+E umas poucas admitiam a real:
 
 - Contratamos gente demais, erramos.
 
@@ -146,29 +121,13 @@ Quer dar uma olhada na quantidade?
 
 No início, pensávamos que os profissionais menos experientes seriam os mais afetados, os que acabaram de se formar ou não contribuíam muito. Todos esperavam uma rápida recuperação do mercado. Eu também acreditava, mas a realidade mostrou o contrário.
 
-Me segue no flow, vai somando as ideias:
-
-{% highlight txt %}
-Mídia
-
-- Pandemia
-- Seja Programador(a)!
-- Fundo de Investimentos
-- Inflação
-- Layoffs
-
----
-
-= ?
-{% endhighlight %}
-
 ## OpenAi
 
 Em 2019 [a Microsoft investiu nada mais nada menos que 1 bilhão de dólares](https://openai.com/blog/microsoft-invests-in-and-partners-with-openai) pra ser o único parceiro em nuvem da então desconhecida empresa OpenAI. Isso fez com que as duas empresas arregaçarem as mangas e trabalhassem juntas no desenvolvimento técnico de um LLM.
 
 No dia 30 de novembro de 2022, o dono do morro chegou! Dadinho é o karalho, meu nome agora é ChatGPT! Utilizando um LLM na versão 3.5, o software [alcançou mais de 100 milhões de usuários em poucos dias](https://techcrunch.com/2023/11/06/openais-chatgpt-now-has-100-million-weekly-active-users/). Será que veio pra brincar?
 
-Spoiler: Em algumas partes dos LLMs do ChatGPT os mesmos foram construídos usando Python. Falei no post ["Por que estudar Python?"](https://alancria.xyz/python-2-de-365) que o Python impulsionou muitas técnicas como: [Deep Learning](https://pt.wikipedia.org/wiki/Aprendizagem_profunda), [Machine Learning](https://pt.wikipedia.org/wiki/Aprendizado_de_máquina) e [Natural Language](https://pt.wikipedia.org/wiki/Língua_naturalProcessing), uma parte disso tudo gerou os LLMs da OpenAI. Então acredito que há muito pano na manga para o Python.
+Spoiler: Em algumas partes dos LLMs do ChatGPT os mesmos foram construídos usando Python. Falei no post ["Por que estudar Python?"](hhttps://alancria.xyz/post/por-que-estudar-python) que o Python impulsionou muitas técnicas como: [Deep Learning](https://pt.wikipedia.org/wiki/Aprendizagem_profunda), [Machine Learning](https://pt.wikipedia.org/wiki/Aprendizado_de_máquina) e [Natural Language](https://pt.wikipedia.org/wiki/Língua_naturalProcessing), uma parte disso tudo gerou os LLMs da OpenAI. Então acredito que há muito pano na manga para o Python.
 
 A Microsoft, como investidora, já lançou a primeira ferramenta de uma nova era de IA dentro da empresa: A integração do [Copilot](https://github.com/features/copilot/) com o modelo GPT 3.5, ele permite que desenvolvedores de todas as linguagens vejam uma interface gerando códigos, entendendo contexto e corrigindo bugs, tudo dentro do VS Code.
 
@@ -176,7 +135,9 @@ Então começaram as primeiras notícias:
 
 > "Fim dos desenvolvedores?"
 
-Putz, que bad, hein? Primeiro o mercado incentivando todo mundo a virar programador, depois começa a demitir todo mundo e agora as notícias dizendo que seremos substituídos? Em 2023 os devs chamavam a IA de burra, dizendo que nunca vai acontecer essa substituição. Eu acredito que pode sim, em partes.
+Putz, que bad, hein? Primeiro o mercado incentivando todo mundo a virar programador, depois começa a demitir todo mundo e agora as notícias dizendo que seremos substituídos?
+
+Em 2023 os devs chamavam a IA de burra, dizendo que nunca vai acontecer essa substituição. Eu acredito que pode sim, em partes.
 
 Então, a OpenAI libera o acesso ao seu modelo de LLM via API e milhares de outros softwares agora começam a ser construídos utilizando essa tecnologia. Lembra do primeiro tópico? A mídia, ela mesma agora não precisa mais gerar notícias para aprender a programar, as notícias chegam quase a cada 1 hora, sobre:
 
@@ -184,26 +145,11 @@ Então, a OpenAI libera o acesso ao seu modelo de LLM via API e milhares de outr
 
 Começa uma sensação de alarmismo para todos os lados e não apenas para os devs, mas para todas as profissões, pois com a API liberada, a IA pode chegar a todos os lugares e isso faz com que as pessoas comecem a temer serem substituídas por máquinas.
 
-Me segue no flow, vai somando as ideias:
-
-{% highlight txt %}
-Mídia
-
-- Pandemia
-- Seja Programador(a)!
-- Fundo de Investimentos
-- Inflação
-- Layoffs
-- OpenAi
-
----
-
-= ?
-{% endhighlight %}
-
 ## IA
 
-Depois da OpenAI, outras empresas como Google, Twitter, Meta começam a lançar os seus próprios LLM, além da explosão de vários LLM opensource. Então começamos a ver uma explosão de IA's para todos os lados e chegamos a um nível que não dá para acompanhar, pois a cada semana é uma nova versão do nosso futuro, a cada semana se fala em mais e mais substituições e com isso vamos ver aquelas páginas de layoffs cada vez mais cheias.
+Depois da OpenAI, outras empresas como Google, Twitter, Meta começam a lançar os seus próprios LLM, além de vários LLM opensource.
+
+Então começamos a ver uma explosão de IA's para todos os lados e chegamos a um nível que não dá para acompanhar, pois a cada semana é uma nova versão do nosso futuro, a cada semana se fala em mais e mais substituições e com isso vamos ver aquelas páginas de layoffs cada vez mais cheias.
 
 Será que o desenvolvedor vai mesmo acabar? Talvez o tipo de Dev que você é ou já viu, sim, ele pode acabar. Mas o que eu acredito é:
 
@@ -213,31 +159,19 @@ Mas e o mercado de trabalho para Python? Se é isso que você queria saber, não
 
 Hoje, dia 13/03/2024, foi lançada uma IA que consegue ler a documentação, consegue ler o log, consegue criar o código e testar a aplicação de ponta a ponta. Mais detalhes em: [https://www.cognition-labs.com/blog](https://www.cognition-labs.com/blog). Com isso, vai surgir mais alarmismo sobre o nosso fim.
 
-{% highlight txt %}
-Mídia
-
-- Pandemia
-- Seja Programador(a)!
-- Fundo de Investimentos
-- Inflação
-- Layoffs
-- OpenAi
-- IA
-
----
-
-= Você precisa se adaptar
-{% endhighlight %}
-
 ## IndieHacker
 
-Chegamos ao tópico onde eu acredito que cada vez mais pessoas vão buscar esse caminho de alguma forma, pois esse caminho trata de pessoas que são autodidatas, elas não ficam bitoladas em apenas uma linguagem, framework ou modelo de trabalho. São pessoas que ganham a vida na internet, lançando pequenos produtos para determinados nichos, esse grupo consegue dominar marketing, vendas, codificação e o que precisa fazer, são às vezes uma única pessoa ou, no máximo, um pequeno grupo. Já existem muitas pessoas que vivem dessa forma, o caso de maior sucesso é o de [@levelsio](https://twitter.com/levelsio), que fatura R$ 2.485.000,00 mensalmente, sozinho e com vários pequenos projetos, boa parte deles utilizando a API da OpenAI.
+Chegamos ao tópico onde eu acredito que cada vez mais pessoas vão buscar esse caminho de alguma forma, pois esse caminho trata de pessoas que são autodidatas, elas não ficam bitoladas em apenas uma linguagem, framework ou modelo de trabalho.
 
-O proprio Sam Altman (CEO da OpenAI) tem esse pensamento, segundo ele:
+São pessoas que ganham a vida na internet, lançando pequenos produtos para determinados nichos, esse grupo consegue dominar marketing, vendas, codificação e o que precisa fazer, são às vezes uma única pessoa ou, no máximo, um pequeno grupo.
+
+Já existem muitas pessoas que vivem dessa forma, o caso de maior sucesso é o de [@levelsio](https://twitter.com/levelsio), que fatura R$ 2.485.000,00 mensalmente, sozinho e com vários pequenos projetos, boa parte deles utilizando a API da OpenAI.
+
+O proprio Sam Altman (CEO da OpenAI) tem esse pensamento:
 
 > Ele prevê pessoas valendo US$ 1 bilhão: "Está acontecendo"
 
-{% twitter https://twitter.com/SoloTechGuide/status/1753272308108591238 align=center %}
+{% twitter https://twitter.com/SoloTechGuide/status/1753272308108591238 %}
 
 Esse caminho é livre de modelos de contrato de trabalho, é um modelo que combina bem com um mundo totalmente cyberpunk, mas essa é minha chapação, se você quiser continuar nesse caminho comigo, garanto que vamos usar o Python para construir caminhos independentes de uma CLT é pra lá que eu vou.
 
@@ -245,17 +179,10 @@ Se você é cria, você tá ligado que a gente não pode ficar nessa de muito de
 
 Caso você ainda pense em conseguir um trampo formal, não te julgo e estou aqui para ajudar, mas não vou abordar muito esse assunto, vou deixar aqui um vídeo de quem pesquisou melhor do que eu sobre vagas de trabalho em Python.
 
-{% include embeds/youtube.html id="4kd1iGRuxXM" %}
+{% youtube id="4kd1iGRuxXM" title="PERSPECTIVAS PARA PYTHON EM 2024" %}
 
 ## Próxima aula
 
-Hoje foi intenso, não é? Obrigado por ter chegado até aqui 👊🏽
-Na próxima, vamos falar sobre: Você sabe estudar?
-A ideia é te trazer algumas técnicas para te ajudar a focar, antes de entrarmos de cabeça no Python.
-Tenho certeza que você vai curtir.
+Veja o [cronograma de conteúdo](https://alancria.xyz/post/python-365-dias#lista-das-aulas), para listar as próximas aulas.
 
-[(Leia aqui o cronograma do curso.)](https://alancria.xyz/python-365-dias#conteúdo)
-
-Para receber a próxima atualização, coloque nos comentários: _BORA CRIA!_
-
-{% include post_feedback_footer.md %}
+Para receber a próxima atualização, coloque nos comentários: **BORA CRIA**
