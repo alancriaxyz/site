@@ -19,7 +19,7 @@
   let description = isArticle ? data.meta!.description : config.seo.description
   let url = isArticle ? data.url : config.url
   let image = isArticle
-    ? `https://raw.githubusercontent.com/alancriaxyz/site/main/src/posts/${data.slug}/og.png`
+    ? `https://raw.githubusercontent.com/alancriaxyz/site/main/src/posts/${data.slug}/assets/og.png`
     : config.seo.openGraph.image
   let width = '1200'
   let height = isArticle ? '726' : '675'
