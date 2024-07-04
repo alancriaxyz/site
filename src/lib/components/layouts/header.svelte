@@ -25,7 +25,12 @@
     <div>
       <a href="/">
         <span class="text-sm font-bold">
-          <img src="/favicon-32x32.png" alt="Logo" class="h-6" />
+          <img
+            src="/favicon-32x32.png"
+            alt="Logo"
+            class="h-6"
+            width="24"
+            height="24" />
         </span>
       </a>
     </div>
