@@ -77,7 +77,8 @@
         on:click={handleModeChange}
         variant="ghost"
         class="w-9 px-0"
-        size="sm">
+        size="sm"
+        aria-label="Mudar Thema">
         <Icon.sun
           class="dark:-roate-90 h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:scale-0" />
         <Icon.moon
