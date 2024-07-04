@@ -61,7 +61,11 @@
     </div>
 
     <nav class="flex items-center">
-      <a href={config.social.youtube} target="_blank" rel="noreferrer">
+      <a
+        href={config.social.youtube}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Visitar canal no YouTube">
         <div
           class={cn(
             buttonVariants({
