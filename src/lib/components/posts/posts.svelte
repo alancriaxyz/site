@@ -14,7 +14,7 @@
           <Card.Title title={post.title}>{post.title}</Card.Title>
           <Card.Description>{post.description}</Card.Description>
         </Card.Header>
-        <Card.Footer class="text-xs text-gray-500">
+        <Card.Footer class="text-xs text-gray-100">
           {post.timeAgo}
         </Card.Footer>
       </Card.Root>
