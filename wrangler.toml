@@ -1,5 +1,2 @@
 name = 'site'
 pages_build_output_dir = '.svelte-kit/cloudflare'
-
-[env]
-node_version = "18.18.0"
