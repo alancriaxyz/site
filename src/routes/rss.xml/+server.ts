@@ -1,3 +1,5 @@
+export const prerender = true;
+
 import { config } from '$lib/config';
 import { json, type RequestHandler } from '@sveltejs/kit';
 import { getPosts } from '$lib/services/post';
