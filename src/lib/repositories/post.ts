@@ -1,28 +1,23 @@
-import fs from 'node:fs/promises';
-import path from 'node:path';
 import matter from 'gray-matter';
 import type { Post } from '$lib/models/post';
 import { timeAgo } from '$lib/utils/date';
 
 export async function getPostsFromFiles(): Promise<Post[]> {
   const posts: Post[] = [];
-  const postsPath = path.resolve('src/posts');
-  const folders = await fs.readdir(postsPath, { withFileTypes: true });
+  const modules = import.meta.glob('/src/posts/*/post.md', { query: '?raw', import: 'default' });
 
-  for (const folder of folders) {
-    if (folder.isDirectory()) {
-      const markdownFilePath = path.join(postsPath, folder.name, 'post.md');
-      try {
-        const markdownContent = await fs.readFile(markdownFilePath, 'utf-8');
-        const { data } = matter(markdownContent);
-        posts.push({
-          ...data,
-          slug: folder.name,
-          timeAgo: timeAgo(data.datePublished)
-        } as Post);
-      } catch (err) {
-        console.log(`Skipping folder ${folder.name} - no markdown file found`);
-      }
+  for (const path in modules) {
+    const folder = path.split('/').slice(-2, -1)[0];
+    try {
+      const markdownContent: string = await modules[path]() as unknown as string;
+      const { data } = matter(markdownContent);
+      posts.push({
+        ...data,
+        slug: folder,
+        timeAgo: timeAgo(data.datePublished),
+      } as Post);
+    } catch (err) {
+      console.log(`Skipping folder ${folder} - error reading markdown file`);
     }
   }
 
