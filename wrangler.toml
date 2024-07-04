@@ -9,7 +9,6 @@ build.command = "npm run build"
 compatibility_date = "2021-11-12"
 workers_dev = true
 
-name = 'site'
 pages_build_output_dir = '.svelte-kit/cloudflare'
 compatibility_flags = [ "nodejs_compat" ]
 
