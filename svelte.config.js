@@ -12,7 +12,7 @@ const config = {
 		adapter: adapter({
 			routes: {
 				include: ["/*"],
-				exclude: ["<all>", "/sitemap.xml"],
+				exclude: ["<all>", "/mysitemap.xml"],
 			},
 		}),
 	},
