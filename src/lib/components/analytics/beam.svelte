@@ -9,7 +9,7 @@
       const script = document.createElement('script')
       script.src = 'https://beamanalytics.b-cdn.net/beam.min.js'
       script.setAttribute('data-token', beamToken)
-      script.async = true
+      script.setAttribute('async', '')
       document.head.appendChild(script)
     }
   })
