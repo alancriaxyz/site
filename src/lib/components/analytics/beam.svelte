@@ -2,13 +2,13 @@
   import { onMount } from 'svelte'
 
   let isProduction = import.meta.env.VITE_ENV === 'production'
-  let beamToken = import.meta.env.BEAM_ANALYTICS_TOKEN
+  let beamToken = import.meta.env.VITE_BASE_ENDPOINT
 
   onMount(() => {
     if (isProduction) {
       const script = document.createElement('script')
       script.src = 'https://beamanalytics.b-cdn.net/beam.min.js'
-      script.setAttribute('data-token', import.meta.env.VITE_BASE_ENDPOINT)
+      script.setAttribute('data-token', beamToken)
       script.async = true
       document.head.appendChild(script)
     }
