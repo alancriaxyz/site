@@ -1,5 +1,6 @@
 export const prerender = true;
 
+import dateformat from 'dateformat'
 import { config } from '$lib/config';
 import { json, type RequestHandler } from '@sveltejs/kit';
 import { getPosts } from '$lib/services/post';
@@ -36,7 +37,7 @@ const sitemap = (posts: Post[]): string => `<?xml version="1.0" encoding="UTF-8"
   <url>
     <loc>${config.url}/post/${post.slug}</loc>
     <changefreq>weekly</changefreq>
-    <lastmod>${post.dateModified}</lastmod>
+    <lastmod>${dateformat(post.datePublished, 'isoDate')}</lastmod>
     <priority>0.5</priority>
   </url>
   `
