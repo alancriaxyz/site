@@ -8,7 +8,7 @@
     if (isProduction) {
       const script = document.createElement('script')
       script.src = 'https://beamanalytics.b-cdn.net/beam.min.js'
-      script.setAttribute('data-token', import.meta.env.BEAM_ANALYTICS_TOKEN)
+      script.setAttribute('data-token', import.meta.env.VITE_BASE_ENDPOINT)
       script.async = true
       document.head.appendChild(script)
     }
