@@ -2,7 +2,7 @@
   import { onMount } from 'svelte'
 
   let isProduction = import.meta.env.VITE_ENV === 'production'
-  let beamToken = import.meta.env.VITE_BASE_ENDPOINT
+  let beamToken = import.meta.env.VITE_BEAM_ANALYTICS_TOKEN
 
   onMount(() => {
     if (isProduction) {
