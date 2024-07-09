@@ -3,7 +3,7 @@ import { config } from '$lib/config';
 
 export async function load({ params: { slug } }) {
 	try {
-		const post = await import(`/posts/${slug}/post.md`)
+		const post = await import(`../../../../posts/${slug}/post.md`)
 		
 		return {
 			meta: post.metadata,
