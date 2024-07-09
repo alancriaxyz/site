@@ -38,10 +38,26 @@ Nesse primeiro momento, o mais relevante é você se concentrar no Python e, com
 
 ## 1º passo: Acessando Google Colab
 
-Para utilizar o Google Colab, primeiro você precisa ter uma conta no Google. Depois, acesse o site [https://colab.research.google.com](https://colab.research.google.com)
+Para utilizar o Google Colab, primeiro tenha uma conta no Google. Depois, acesse o site [https://colab.research.google.com](https://colab.research.google.com)
 
-Ao abrir o Colab, você verá uma janela para criar um novo notebook. Você pode iniciar um notebook a partir de um exemplo fornecido, abrir um arquivo recente, importar do Google Drive ou GitHub, ou fazer upload diretamente do seu computador.
+Ao abrir o Colab, você verá uma janela para criar um novo notebook. Você pode iniciar um notebook a partir de um exemplo, abrir um arquivo recente, importar do Google Drive ou GitHub, ou fazer upload do seu computador.
 
-{% img src="1o-passo-acessando-google-colab.png" alt="Janela inicial" %}
+{% img src="1o-passo-acessando-google-colab.png" alt="Tela inicial" %}
 
-Além disso, o Colab oferece uma variedade de recursos pré-configurados, tornando a configuração inicial bastante simples. Basta escolher a opção que melhor se adequa às suas necessidades e começar a programar.
+Escolha a opção para **Novo notebook** e você estará pronto para começar a programar.
+
+## 2º passo: Escrevendo e Executando Código
+
+Depois de criar um novo notebook, você verá uma célula de código onde pode começar a escrever Python. Vamos começar com um exemplo simples:
+
+```ipynb
+print("Hello, Google Colab!")
+```
+
+Para executar o código, clique no ícone de “play” à esquerda da célula. Você verá a saída logo abaixo da célula de código.
+
+Na primeira vez irá demorar um pouco, pois o google colab disponibilizar uma máquina na nuvem para você, então ela demora inicialmente para iniciar, depois de iniciada você pode executar códigos mais rápido.
+
+Esse será o resultado:
+
+{% img src="2o-passo-primeiro-print.png" alt="Primeiro Print" %}
