@@ -3,6 +3,7 @@ title: Por que estudar Python?
 description: Desbloqueie todo o potencial do Python para automatizar tarefas, trabalhar com IA e se destacar no mercado!
 datePublished: '2024-03-11 00:00:00'
 dateModified: '2024-03-11 00:00:00'
+status: published
 ---
 
 ## Conteúdo

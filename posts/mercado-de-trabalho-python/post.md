@@ -3,6 +3,7 @@ title: Mercado de Trabalho & Python
 description: Descubra o futuro do trabalho em tecnologia e a era da IA com Python.
 datePublished: '2024-03-13 00:00:00'
 dateModified: '2024-03-13 00:00:00'
+status: published
 ---
 
 ## Conteúdo

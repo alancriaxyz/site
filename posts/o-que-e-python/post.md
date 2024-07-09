@@ -3,6 +3,7 @@ title: O que é Python?
 description: História, filosofia e os princípios do Python.
 datePublished: '2024-03-10 00:00:00'
 dateModified: '2024-03-10 00:00:00'
+status: published
 ---
 
 ## Conteúdo

@@ -3,6 +3,7 @@ title: Python 365 Dias
 description: Domine do zero ao avançado. Explore automação, análise de dados, IA e muito mais. Totalmente gratuito!
 datePublished: '2024-03-08 00:00:00'
 dateModified: '2024-03-08 00:00:00'
+status: published
 ---
 
 ## Conteúdo
