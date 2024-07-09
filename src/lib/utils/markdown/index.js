@@ -15,7 +15,8 @@ import { transformerNotationHighlight } from '@shikijs/transformers'
 import { rehypeCopyCode, rehypeUnwrapImages } from './plugins.js'
 import toHtmlString from 'rehype-stringify'
 
-const images = `https://raw.githubusercontent.com/alancriaxyz/site/main/src/posts`
+const images = `https://raw.githubusercontent.com/alancriaxyz/site/main/posts`
+
 
 /**
  * Returns post slug.
